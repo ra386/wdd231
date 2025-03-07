@@ -112,9 +112,9 @@ function myCourses(filteredCourses) {
         // box.style.marginRight = "30px";
 
         if (courses.completed) {
-            box.style.backgroundColor = "#4CAF50"; // Green for completed courses
+            box.style.backgroundColor = "#588157"; // Green for completed courses
         } else {
-            box.style.backgroundColor = "#2196F3"; // Blue for incomplete courses
+            box.style.backgroundColor = "#3d5842"; // Blue for incomplete courses
         }
 
 
