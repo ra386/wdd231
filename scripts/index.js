@@ -95,3 +95,41 @@ const courses = [
       completed: false
   }
 ]
+
+function myCourses(filteredCourses) {
+    const container = document.querySelector("#cards");
+    container.innerHTML = "";
+
+    filteredCourses.forEach(courses => {
+        let wallet = document.createElement("div");
+        let box = document.createElement("button");
+        
+
+        // content of button
+        box.textContent = courses.subject  +  courses.number;
+        // noms.textContent = courses.number;
+        
+        wallet.appendChild(box);
+        // wallet.appendChild(noms);
+        container.appendChild(wallet);
+    });
+
+}
+
+myCourses(courses);
+
+// Event Listeners
+
+document.querySelector("#tout").addEventListener("click",() => {
+    myCourses(courses);
+})
+
+document.querySelector("#science").addEventListener("click", () => {
+    const cse = courses.filter(courses => courses.subject === "CSE");
+    myCourses(cse);
+});
+
+document.querySelector("#web").addEventListener("click", () => {
+    const web = courses.filter(courses => courses.subject === "WDD");
+    myCourses(web);
+});

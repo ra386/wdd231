@@ -62,4 +62,14 @@ nav:active{
     margin-left: 20x;
     
 }
+
+#cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+    
+}
+#card button{
+    width: 200px;
+}
  
