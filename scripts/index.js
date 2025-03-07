@@ -103,11 +103,26 @@ function myCourses(filteredCourses) {
     filteredCourses.forEach(courses => {
         let wallet = document.createElement("div");
         let box = document.createElement("button");
+        box.style.width = "90%";
+        box.style.height = "80px";
+
+        box.style.marginBottom = "30px";
+        box.style.marginTop = "25px";
+        // if (courses.completed = true  box.style.backgroundColor = "green")
+        // box.style.marginRight = "30px";
+
+        if (courses.completed) {
+            box.style.backgroundColor = "#4CAF50"; // Green for completed courses
+        } else {
+            box.style.backgroundColor = "#2196F3"; // Blue for incomplete courses
+        }
+
+
         
 
         // content of button
-        box.textContent = courses.subject  +  courses.number;
-        // noms.textContent = courses.number;
+        box.textContent = `${courses.subject} ${courses.number}`;
+        
         
         wallet.appendChild(box);
         // wallet.appendChild(noms);
@@ -118,7 +133,7 @@ function myCourses(filteredCourses) {
 
 myCourses(courses);
 
-// Event Listeners
+// Event Listeners to filter
 
 document.querySelector("#tout").addEventListener("click",() => {
     myCourses(courses);
@@ -133,3 +148,6 @@ document.querySelector("#web").addEventListener("click", () => {
     const web = courses.filter(courses => courses.subject === "WDD");
     myCourses(web);
 });
+
+// hamburger button
+
