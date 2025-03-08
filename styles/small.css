@@ -30,9 +30,9 @@
         display: block;
     } 
     ul{
-        display: contents;
-        margin-bottom: 20px;
-        color: #dad7cd;
+       display: block;
+       margin-left: 30px;
+        
     }
 
     .control
