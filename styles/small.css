@@ -31,13 +31,25 @@
     {
         display: block;
     }
+
+    .control
+    {
+        display: flex;
+        gap: 10px;
+    }
     .head
     {
         margin-top: 10px;
+        
+    }
+    .space
+    {
+        margin-top: 30px;
     }
     #cards
     {
         display: block;
+        
     }
      .uno
      {

@@ -107,10 +107,10 @@ function myCourses(filteredCourses) {
         let wallet = document.createElement("div");
         let box = document.createElement("button");
         box.style.width = "90%";
-        box.style.height = "80px";
+        box.style.height = "50px";
         box.style.color = "black";
-        box.style.marginBottom = "30px";
-        box.style.marginTop = "25px";
+        box.style.marginBottom = "10px";
+        box.style.marginTop = "20px";
         // if (courses.completed = true  box.style.backgroundColor = "green")
         // box.style.marginRight = "30px";
 

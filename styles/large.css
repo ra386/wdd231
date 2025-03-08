@@ -20,6 +20,8 @@
 body
 {
     background-color: var(--back-color);
+    scroll-behavior: smooth;
+
 }
 
 header{
@@ -69,6 +71,8 @@ nav a:hover{
     background-color: var(--accent2-color);
     color: whitesmoke;
     text-decoration: overline;
+    transition: 0.5s ease;
+    
 
 }
 nav:active{
@@ -85,6 +89,7 @@ navigation a:active {
     text-align: center;
     grid-gap: 20px;
     margin-bottom: 10px;
+    margin: 20px;
 }
 
 .container img{
@@ -110,6 +115,8 @@ figcaption
 }
 .container2{
     text-align: center;
+    margin: 20px;
+
 }
 .container2 button{
     width: 120px;
@@ -126,12 +133,19 @@ figcaption
     background-color: var(--accent2-color);
 }
 
-/* .container2 h2
-{
+.container2 h2{
+    padding: 10px;
+    margin-top: 25px;
+    /* margin-bottom: 15px; */
     background-color: var(--accent2-color);
-    padding: 20px;
-    border-radius: 10px;
-} */
+    border-radius: 5px;
+}
+.control
+{
+    background-color: var(--accent3-color);
+    padding: 30px;
+}
+
 .unique
 {
     background-color: var(--primary-color);
@@ -143,26 +157,37 @@ figcaption
 #cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
     /* padding: 30px; */
     
 }
-#card button{
-    width: 200px;
+/* #card button{
+    width: 150px;
+    height: 50px;
+} */
+
+.dos
+{
+    margin-top: 10px;
+    color: rgb(181, 181, 170);
 }
 
 footer img{
     height: 50px;
     width: 80px;
-    margin-top: 30px;
-    margin-left: 25px;
+    margin-top: 10px;
+    margin-left: 25px; 
 }
 footer{
     text-align: center;
     font-size: 25px;
-    /* padding: 20px; */
-    background-color: azure;
-   
-   
+    margin-bottom: 10px;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    margin: 0;
+    color: whitesmoke;
     
 }
  
