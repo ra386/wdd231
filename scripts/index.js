@@ -121,9 +121,6 @@ function myCourses(filteredCourses) {
             box.style.color = "whitesmoke";
         }
 
-
-        
-
         // content of button
         box.textContent = `${courses.subject} ${courses.number}`;
         
@@ -133,6 +130,8 @@ function myCourses(filteredCourses) {
         container.appendChild(wallet);
     });
 
+   
+
 }
 
 myCourses(courses);
@@ -140,6 +139,7 @@ myCourses(courses);
 // Event Listeners to filter
 
 document.querySelector("#tout").addEventListener("click",() => {
+    
     myCourses(courses);
 })
 
@@ -153,9 +153,6 @@ document.querySelector("#web").addEventListener("click", () => {
     myCourses(web);
 });
 
-// credits per course 
-const credits = document.querySelector("#credits");
-
 
 
 // hamburger button
@@ -164,6 +161,6 @@ const menu = document.querySelector("#navig");
 const hamburgerButton = document.querySelector("#ham");
 
 hamburgerButton.addEventListener('click', () => {
-    menu.classList.toggle('active'); // Toggle the 'active' class
+    menu.classList.toggle('active'); 
     hamburgerButton.textContent = menu.classList.contains('active') ? '✖' : '☰';
 });
