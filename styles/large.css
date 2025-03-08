@@ -22,7 +22,6 @@ body
     background-color: var(--back-color);
     scroll-behavior: smooth;
     font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
 
@@ -68,7 +67,6 @@ nav a{
     text-transform: capitalize;
     padding: 20px;
     color:  black;
-    font-size: 300;
 }
 
 nav a:hover{
