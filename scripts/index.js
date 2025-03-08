@@ -108,7 +108,7 @@ function myCourses(filteredCourses) {
         let box = document.createElement("button");
         box.style.width = "90%";
         box.style.height = "80px";
-
+        box.style.color = "black";
         box.style.marginBottom = "30px";
         box.style.marginTop = "25px";
         // if (courses.completed = true  box.style.backgroundColor = "green")
@@ -117,7 +117,8 @@ function myCourses(filteredCourses) {
         if (courses.completed) {
             box.style.backgroundColor = "#588157"; // Green for completed courses
         } else {
-            box.style.backgroundColor = "#3d5842"; // Blue for incomplete courses
+            box.style.backgroundColor = "#7f4f24"; // Blue for incomplete courses
+            box.style.color = "whitesmoke";
         }
 
 
@@ -151,6 +152,11 @@ document.querySelector("#web").addEventListener("click", () => {
     const web = courses.filter(courses => courses.subject === "WDD");
     myCourses(web);
 });
+
+// credits per course 
+const credits = document.querySelector("#credits");
+
+
 
 // hamburger button
 
