@@ -12,6 +12,9 @@ copy.innerHTML = '©';
 const lastmod = document.querySelector("#lastmodified");
 lastmod.textContent = `Last Modified: ${document.lastModified}`;
 
+
+
+
 const courses = [
   {
       subject: 'CSE',
@@ -150,4 +153,12 @@ document.querySelector("#web").addEventListener("click", () => {
 });
 
 // hamburger button
+const hamburger = document.querySelector("#ham");
+const navigation = document.querySelector("#navig");
+
+hamburger.addEventListener("click",() => {
+    navigation.classList.toggle(`open`);
+
+    hamburger.classList.toggle(`open`);
+} );
 

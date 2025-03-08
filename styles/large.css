@@ -83,21 +83,18 @@ nav:active{
     font-weight: bolder;
     
 }
+
 .container h2 
 {
     background-color: var(--accent2-color);
 }
-.container figure
-{
-    background-color: var(--secondary-color);
-    padding: 20px;
-}
-.container2 h2
+
+/* .container2 h2
 {
     background-color: var(--accent2-color);
     padding: 20px;
     border-radius: 10px;
-}
+} */
 .unique
 {
     background-color: var(--primary-color);
