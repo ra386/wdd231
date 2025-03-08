@@ -82,11 +82,7 @@ nav a:hover{
 nav:active{
 
 }
-/* .navigation a:hover,
-navigation a:active {
-	color: white;
-	background-color: black;
-} */
+
 .container{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -94,6 +90,10 @@ navigation a:active {
     grid-gap: 20px;
     margin-bottom: 10px;
     margin: 20px;
+}
+ul
+{
+    display: none;
 }
 
 .container img{

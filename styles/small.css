@@ -4,9 +4,7 @@
         display: contents;
         font-size: 30px;
         color: whitesmoke;
-        /* color: whitesmoke;
-        display: block;
-        font-size: 20px; */
+       
     }
     nav a{
         display: none;
@@ -19,17 +17,22 @@
         text-align: center;
     } 
     nav.active {
-        display: flex; /* Show the navigation when active */
+        display: flex; 
     }
-    /* Add this to your CSS */
+    
     nav.active a {
-    display: block; /* Show the links when the nav has the 'active' class */
+    display: block; 
     }
 
    
-    .container
+     .container
     {
         display: block;
+    } 
+    ul{
+        display: contents;
+        margin-bottom: 20px;
+        color: #dad7cd;
     }
 
     .control
@@ -42,10 +45,7 @@
         margin-top: 10px;
         
     }
-    .space
-    {
-        margin-top: 30px;
-    }
+   
     #cards
     {
         display: block;
@@ -57,9 +57,5 @@
         justify-content: space-around;
         
      }
-     /* footer{
-        display: grid;
-        
-     } */
-
+     
 }
