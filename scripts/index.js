@@ -111,13 +111,11 @@ function myCourses(filteredCourses) {
         box.style.color = "black";
         box.style.marginBottom = "10px";
         box.style.marginTop = "20px";
-        // if (courses.completed = true  box.style.backgroundColor = "green")
-        // box.style.marginRight = "30px";
-
+       
         if (courses.completed) {
-            box.style.backgroundColor = "#588157"; // Green for completed courses
+            box.style.backgroundColor = "#588157"; 
         } else {
-            box.style.backgroundColor = "#7f4f24"; // Blue for incomplete courses
+            box.style.backgroundColor = "#7f4f24"; 
             box.style.color = "whitesmoke";
         }
 
@@ -126,7 +124,6 @@ function myCourses(filteredCourses) {
         
         
         wallet.appendChild(box);
-        // wallet.appendChild(noms);
         container.appendChild(wallet);
     });
 
@@ -154,8 +151,6 @@ document.querySelector("#web").addEventListener("click", () => {
 });
 
 
-
-// hamburger button
 
 const menu = document.querySelector("#navig");
 const hamburgerButton = document.querySelector("#ham");
