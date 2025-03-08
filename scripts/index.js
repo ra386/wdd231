@@ -153,12 +153,11 @@ document.querySelector("#web").addEventListener("click", () => {
 });
 
 // hamburger button
-const hamburger = document.querySelector("#ham");
-const navigation = document.querySelector("#navig");
 
-hamburger.addEventListener("click",() => {
-    navigation.classList.toggle(`open`);
+const menu = document.querySelector("#navig");
+const hamburgerButton = document.querySelector("#ham");
 
-    hamburger.classList.toggle(`open`);
-} );
-
+hamburgerButton.addEventListener('click', () => {
+    menu.classList.toggle('active'); // Toggle the 'active' class
+    hamburgerButton.textContent = menu.classList.contains('active') ? '✖' : '☰';
+});

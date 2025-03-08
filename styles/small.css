@@ -1,19 +1,32 @@
 @media only screen and (max-width: 700px)
 {
-    header button{
+     header button{
         display: contents;
+        font-size: 30px;
         color: whitesmoke;
+        /* color: whitesmoke;
+        display: block;
+        font-size: 20px; */
+    }
+    nav a{
+        display: none;
     }
 
-    nav{
-        /* display: none; */
-    }
     nav
     {
         display: flex;
         flex-direction: column;
         text-align: center;
+    } 
+    nav.active {
+        display: flex; /* Show the navigation when active */
     }
+    /* Add this to your CSS */
+    nav.active a {
+    display: block; /* Show the links when the nav has the 'active' class */
+    }
+
+   
     .container
     {
         display: block;
@@ -26,9 +39,6 @@
     {
         display: block;
     }
-    /* footer{
-        display: block;
-    } */
      .uno
      {
         display: grid;
