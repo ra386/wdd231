@@ -10,13 +10,6 @@
     --secondary-color1: #333333;
     --secondary-color2:#FF6F61;
     --back-color-color2:#F5F5F5 ;
-
-
-    /* --accent1-color:#228B22 ;
-    --accent2-color: #FF6F61; */
-    /* --back-color: #3d5842; */
-
-
 }
 body{
     background-color: whitesmoke;
@@ -120,7 +113,7 @@ main{
 }
 .cards{
     margin: 0; /* Remove default margins */
-    padding: 10px; /* Add padding inside the cards */
+    padding: 15px; /* Add padding inside the cards */
     border: 1px solid #ccc; /* Optional: Add a border for visual separation */
     background-color: #f9f9f9; /* Optional: Add a background color */
     text-align: center; /* Center content inside the cards */
@@ -134,11 +127,13 @@ main{
 }
 
 #comps.list-view .cards {
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
+   display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0;
+    padding: 0.25rem;
+    align-items: end;
     padding: 15px;
-    gap: 5rem;
-   text-align: center;
 
 }
 #comps.list-view .cards{
@@ -148,6 +143,7 @@ main{
 #comps.list-view .cards:nth-child(even) {
     background-color: var(--secondary-color1);
     padding: 15px;
+    color: whitesmoke;
 }
 
 
