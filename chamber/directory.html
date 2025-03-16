@@ -19,48 +19,71 @@
     <!-- Non-Essential, But Required for Analytics -->
     <meta property="fb:app_id" content="123456789012345">
     <meta name="twitter:site" content="@SpringfieldCOC">
+    <link rel="stylesheet" href="styles/normalise.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <script defer src="scripts/directory.js"></script>
+    <link rel="stylesheet" href="styles/directory_large.css">
     <title>Bonaberi Commerce Chamber</title>
 </head>
 <body>
     <header>
-        <div>
 
-        </div>
-        <nav id="navig">
-            <a href="directory.html">Home</a>
-            <a href="">Directory</a>
-            <a href="">Join</a>
-            <a href="">Discover</a>
-            <button><img src="" alt="toogle light and dark screen view icon"></button>
-    
-        </nav>
+        <div class="header-top">
+            <div class="header-top-left">  
+          <img src="images/logo.png" alt="Timbuktu Chamber of Commerce Logo" width="100" height="100">
+          <div class="intro">
+          <h1>Timbuktu </h1>
+          <p>Chamber of Commerce<p>
+          </div>
+      </div>
+  
+     <div class="header-top-right">
+      <nav>
+          <button class="hamburger">&#9776;</button>
+          <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="directory.html">Directory</a>
+          <a href="discover.html">Discover</a>
+          <a href="join.html">Join</a>
+          
+         </div>
+      </nav>
+      <a href=""><img src="images/quatermoon.png" alt="" height="30px"></a>
+      </div>
+  </div>
     </header>
 
     <main>
+        <div class="toggle-view">
+            <button id="gridview">⏹️Grid</button>
+            <button id="listview">📄List</button>
+        </div>
+        <div id="comps" class="member-cards grid-view">
+
+        </div>
         
+       </div>
     </main>
     <footer>
         <section>
-            <h2> Bonaberi Chamber of Commerce</h2>
-            <p>4023 Rue Bonambappe </p>
-            <p>Bonaberi-Douala-Cameroon</p>
-            <p><a> info@bonaberichamber.org</a></p>
-            <p>(237) 650-378-797</p>
+            <h2>Timbuktu Chamber of Commerce</h2>
+            <p>10 Rue De La Paix </p>
+            <p>Timbuktu,Mali 999</p>
+            <p><a href="">info@bonaberichamber.org</a></p>
+            <p>(223) 555-2300</p>
 
         </section>
 
         <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <a href=""><img src="images/youtube.png" alt=""></a>
+            <a href=""><img src="images/twitter.png" alt=""></a>
+            <a href=""><img src="images/linkedin.png" alt=""></a>
         </div>
 
         <div>
             <p>WDD231 Class Project</p>
             <p>Favour Jr Uche Ebere</p>
-            <p>©2025 Bonaberi Chamber of Commerce</p>
+            <p>©2025 Timbuktu Chamber of Commerce</p>
             <p>Last Modification: <span id="lastmodified"></span></p>
 
 

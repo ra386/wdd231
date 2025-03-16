@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+}
+
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.header-top-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    padding-right: 20px;
+    gap: 10px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+    justify-content: end;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+
+.menu a.active {
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+nav button{
+    display: none;
+}
+
+
+
+
+.toggle-view{
+    text-align: center; 
+    padding: 15px;
+}
+.toggle-view button{
+    margin-right: 12px;
+    padding: 10px;
+}
+
+/* Grid View */
+#comps.grid-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+    gap: 10px; /* Adjust spacing between cards */
+    padding: 10px; /* Optional: Add padding to the grid container */
+}
+
+/* List View */
+#comps.list-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between cards */
+    padding: 10px; /* Optional: Add padding to the list container */
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+
+#comps.list-view .cards img {
+    height: 300px;
+    
+}
+
+#comps.list-view .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+
+}
+
+/* General card styles */
+.cards {
+    margin: 0; /* Remove default margins */
+    padding: 10px; /* Add padding inside the cards */
+    border: 1px solid #ccc; /* Optional: Add a border for visual separation */
+    background-color: #f9f9f9; /* Optional: Add a background color */
+    text-align: center; /* Center content inside the cards */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.cards img {
+    max-width: 100%; /* Ensure images fit within the card */
+    max-height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin:30px ;
+    padding: 20px;
+}
+footer a{
+    margin-right: 35px;
+}
+footer p{
+    margin-top: 5px;
+}
