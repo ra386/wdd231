@@ -26,19 +26,6 @@ async function fetchMemData() {
 }
 fetchMemData();
 
-// const gridview = document.getElementById('gridview');
-// const listview = document.getElementById('listview');
-// const comps = document.getElementById('comps');
-
-// gridview.addEventListener('click', () => {
-//     members.className = 'grid';
-// });
-
-// listView.addEventListener('click', () => {
-//     members.className = 'list';
-// });
-
-
 const gridview = document.getElementById('gridview');
 const listview = document.getElementById('listview');
 const comps = document.getElementById('comps');
@@ -52,3 +39,6 @@ listview.addEventListener('click', () => {
     comps.classList.remove('grid-view'); // Remove grid view class
     comps.classList.add('list-view'); // Add list view class
 });
+
+ 
+

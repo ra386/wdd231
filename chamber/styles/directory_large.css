@@ -3,10 +3,30 @@
     margin: 0px;
     padding: 0;
 }
+:root
+{
+    --primary-color1: #2E5A88;
+    --primary-color2: #87CEEB ;
+    --secondary-color1: #333333;
+    --secondary-color2:#FF6F61;
+    --back-color-color2:#F5F5F5 ;
+
+
+    /* --accent1-color:#228B22 ;
+    --accent2-color: #FF6F61; */
+    /* --back-color: #3d5842; */
+
+
+}
+body{
+    background-color: whitesmoke;
+}
 
 header {
     display: block;
     unicode-bidi: isolate;
+    background-color: var(--primary-color1);
+    color: var(--back-color-color2);
 }
 
 .header-top {
@@ -49,6 +69,12 @@ header {
 
 .menu a {
     text-decoration: none;
+    text-transform: capitalize;
+    color: var(--back-color-color2);
+}
+.menu a:hover{
+    text-decoration: underline;
+    /* color: var(--secondary-color2); */
 }
 
 
@@ -68,7 +94,10 @@ nav button{
 }
 
 
-
+main{
+    margin: 30px;
+    
+}
 
 .toggle-view{
     text-align: center; 
@@ -81,44 +110,15 @@ nav button{
 
 /* Grid View */
 #comps.grid-view {
+
+    margin: 1rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
-    gap: 10px; /* Adjust spacing between cards */
-    padding: 10px; /* Optional: Add padding to the grid container */
-}
-
-/* List View */
-#comps.list-view {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
     align-items: center;
-    gap: 10px; /* Adjust spacing between cards */
-    padding: 10px; /* Optional: Add padding to the list container */
-    margin-bottom: 50px;
-    text-align: center;
     
 }
-
-#comps.list-view .cards img {
-    height: 300px;
-    
-}
-
-#comps.list-view .cards {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    margin-bottom: 10px;
-
-}
-
-/* General card styles */
-.cards {
+.cards{
     margin: 0; /* Remove default margins */
     padding: 10px; /* Add padding inside the cards */
     border: 1px solid #ccc; /* Optional: Add a border for visual separation */
@@ -128,9 +128,43 @@ nav button{
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
+#comps.list-view .cards img {
+    display: none;
+    
+}
+
+#comps.list-view .cards {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    padding: 15px;
+    gap: 5rem;
+   text-align: center;
+
+}
+#comps.list-view .cards{
+    /* background-color:  var(--secondary-color1); */
+}
+
+#comps.list-view .cards:nth-child(even) {
+    background-color: var(--secondary-color1);
+    padding: 15px;
+}
+
+
+
+#comps.grid-view {
+    margin: 0; 
+    padding: 10px; /* Add padding inside the cards */
+    /* border: 1px solid #ccc;  */
+    /* background-color: #f9f9f9;  */
+    text-align: center; /* Center content inside the cards */
+    /* border-radius: 10px; */
+    /* box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5); */
+}
+
 .cards img {
-    max-width: 100%; /* Ensure images fit within the card */
-    max-height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Ensure images fit within the card */
+    height:auto; /* Maintain aspect ratio */
     border-radius: 5px;
 }
 
@@ -138,11 +172,14 @@ nav button{
 footer{
     display: flex;
     justify-content: space-between;
-    margin:30px ;
     padding: 20px;
+    background-color: var(--primary-color1);
+    color:var(--back-color-color2);
 }
 footer a{
     margin-right: 35px;
+    color: var(--back-color-color2);
+    text-decoration: none;
 }
 footer p{
     margin-top: 5px;

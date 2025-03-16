@@ -1,0 +1,82 @@
+/* @media only screen and (max-width: 700px)
+{
+   
+
+    header button {
+        display: contents;
+        font-size: 30px;
+        color: whitesmoke;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav.active {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav.active a {
+        
+        display: flex;
+        flex-direction: row;
+    }
+
+   
+
+
+}
+
+   
+    
+      */
+
+
+
+
+      @media only screen and (max-width: 700px) {
+        /* Hamburger button styling */
+        header button {
+            display: contents;
+            font-size: 30px;
+            color: whitesmoke;
+        }
+    
+        /* Hide navigation links by default */
+        nav a {
+            display: none;
+        }
+    
+        /* Make the nav container flex and vertical */
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center items horizontally */
+            text-align: center;
+        }
+    
+        /* Show navigation links when nav is active */
+        nav.active {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        nav.active a {
+            display: block;
+            width: 100%; /* Make links take full width */
+            padding: 10px; /* Add padding for better spacing */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional: Add a separator */
+        }
+    
+        /* Optional: Style for the hamburger button when menu is open */
+        nav.active + .hamburger {
+            color: var(--secondary-color2); /* Change color when menu is open */
+        }
+    }
