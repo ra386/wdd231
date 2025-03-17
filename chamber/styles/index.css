@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+}
+:root
+{
+    --primary-color1: #2E5A88;
+    --primary-color2: #87CEEB ;
+    --secondary-color1: #333333;
+    --secondary-color2:#FF6F61;
+    --back-color-color2:#F5F5F5 ;
+}
+body{
+    background-color: whitesmoke;
+    font-family: Oswald, Roboto, Georgia;
+}
+h1 {
+    font-size: 60px;
+}
+
+h1 {
+
+    margin: 0px;
+}
+
+h2 {
+    
+    font-size: 24px;
+    font-family: PT Sans;
+}
+h3{
+    font-size: 20px;
+}
+
+
+header {
+    display: block;
+    unicode-bidi: isolate;
+    background-color: var(--primary-color1);
+    color: var(--back-color-color2);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.header-top-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    padding-right: 20px;
+    gap: 10px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+    justify-content: end;
+}
+.view{
+    height:75px;
+    width: 75px;
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--back-color-color2);
+}
+.menu a:hover{
+    text-decoration: underline;
+    
+}
+
+
+.menu a.active {
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+nav button{
+    display: none;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin-top: 20px;
+    text-align: center;
+}
+.container h2{
+    margin-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--primary-color1);
+    color:var(--back-color-color2);
+}
+footer a{
+    margin-right: 35px;
+    color: var(--back-color-color2);
+    text-decoration: none;
+}
+footer img{
+    height: 48px;
+    width: 48px;
+}
+footer p{
+    margin-top: 5px;
+}
+
