@@ -13,7 +13,26 @@
 }
 body{
     background-color: whitesmoke;
+    font-family: Oswald, Roboto, Georgia;
 }
+h1 {
+    font-size: 60px;
+}
+
+h1 {
+
+    margin: 0px;
+}
+
+h2 {
+    
+    font-size: 24px;
+    font-family: PT Sans;
+}
+h3{
+    font-size: 20px;
+}
+
 
 header {
     display: block;
@@ -59,6 +78,10 @@ header {
     gap: 1rem;
     justify-content: end;
 }
+.view{
+    height:75px;
+    width: 75px;
+}
 
 .menu a {
     text-decoration: none;
@@ -67,7 +90,7 @@ header {
 }
 .menu a:hover{
     text-decoration: underline;
-    /* color: var(--secondary-color2); */
+    
 }
 
 
@@ -85,16 +108,15 @@ nav {
 nav button{
     display: none;
 }
-
-
-main{
+#comps{
     margin: 30px;
-    
 }
 
 .toggle-view{
     text-align: center; 
-    padding: 15px;
+    background-color: var(--primary-color2);
+    padding: 30px;
+    margin-bottom: 20px;
 }
 .toggle-view button{
     margin-right: 12px;
@@ -112,11 +134,11 @@ main{
     
 }
 .cards{
-    margin: 0; /* Remove default margins */
-    padding: 15px; /* Add padding inside the cards */
-    border: 1px solid #ccc; /* Optional: Add a border for visual separation */
-    background-color: #f9f9f9; /* Optional: Add a background color */
-    text-align: center; /* Center content inside the cards */
+    margin: 0;
+    padding: 15px; 
+    border: 1px solid #ccc; 
+    background-color: var(--primary-color2); 
+    text-align: center; 
     border-radius: 10px;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
@@ -136,10 +158,16 @@ main{
     padding: 15px;
 
 }
-#comps.list-view .cards{
-    /* background-color:  var(--secondary-color1); */
+#comps.list-view .cards h2{
+   font-size: 20px;
 }
-
+#comps.list-view .cards h3
+{
+    font-size: 17px;
+}
+#comps.list-view .cards:nth-child(even) a{
+    color: whitesmoke;
+}
 #comps.list-view .cards:nth-child(even) {
     background-color: var(--secondary-color1);
     padding: 15px;
@@ -150,17 +178,15 @@ main{
 
 #comps.grid-view {
     margin: 0; 
-    padding: 10px; /* Add padding inside the cards */
-    /* border: 1px solid #ccc;  */
-    /* background-color: #f9f9f9;  */
-    text-align: center; /* Center content inside the cards */
-    /* border-radius: 10px; */
-    /* box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5); */
+    padding: 10px; 
+    text-align: center; /
 }
 
 .cards img {
-    width: 100%; /* Ensure images fit within the card */
-    height:auto; /* Maintain aspect ratio */
+    width: auto ;
+    height: 250px; 
+   
+
     border-radius: 5px;
 }
 
@@ -177,6 +203,11 @@ footer a{
     color: var(--back-color-color2);
     text-decoration: none;
 }
+footer img{
+    height: 48px;
+    width: 48px;
+}
 footer p{
     margin-top: 5px;
 }
+

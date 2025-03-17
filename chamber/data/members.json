@@ -4,37 +4,48 @@
         "address": "123 Rue-Toyota, Bonanjo, Douala, Cameroon",
         "phone": "+237-650-123-4567",
         "website": "https://www.techinnovators.com",
-        "image": "tech_innovators.png",
+        "image": "tech_innovators.svg",
         "membership_level": 3,
         "tagline": "Innovating for a smarter tomorrow.",
         "description": "A leading company in technology innovation and software development."
+    },
+    {
+        "name": "Future Builders Construction",
+        "address": "987 Beach harbor, Akwa, Douala, Cameroon",
+        "phone": "+237-312-789-4567",
+        "website": "https://www.futurebuilders.com",
+        "image": "future_builders.svg",
+        "membership_level": 1,
+        "tagline": "Building dreams, one brick at a time.",
+        "description": "Building the future with cutting-edge construction techniques."
+    },
+    
+    {
+        "name": "Health Plus Medical",
+        "address": "789 Blvd, Bamenda, Cameroon",
+        "phone": "+237-512-555-7890",
+        "website": "https://www.healthplusmedical.com",
+        "image": "health_plus.svg",
+        "membership_level": 1,
+        "tagline": "Your health, our priority.",
+        "description": "Your trusted partner in healthcare and medical services."
     },
     {
         "name": "Green Earth Solutions",
         "address": "456 Eco Drive, Bastos, Yaoundé, Cameroon",
         "phone": "+237-503-987-6543",
         "website": "https://www.greenearthsolutions.org",
-        "image": "green_earth.png",
+        "image": "green_earth.svg",
         "membership_level": 2,
         "tagline": "Sustainably shaping the future.",
         "description": "Dedicated to providing sustainable and eco-friendly solutions."
-    },
-    {
-        "name": "Health Plus Medical",
-        "address": "789 Blvd, Bamenda, Cameroon",
-        "phone": "+237-512-555-7890",
-        "website": "https://www.healthplusmedical.com",
-        "image": "health_plus.png",
-        "membership_level": 1,
-        "tagline": "Your health, our priority.",
-        "description": "Your trusted partner in healthcare and medical services."
     },
     {
         "name": "Creative Designs Co.",
         "address": "321 Rue Sapeur, Bonapriso, Douala, Cameroon",
         "phone": "+237-212-456-7890",
         "website": "https://www.creativedesignsco.com",
-        "image": "creative_designs.png",
+        "image": "creative_designs.svg",
         "membership_level": 2,
         "tagline": "Designing your vision into reality.",
         "description": "Specializing in innovative graphic and web design solutions."
@@ -44,27 +55,18 @@
         "address": "654 Caporal ave, Buea, Cameroon",
         "phone": "+237-305-123-7890",
         "website": "https://www.globallogistics.com",
-        "image": "global_logistics.png",
+        "image": "global_logistics.svg",
         "membership_level": 3,
         "tagline": "Connecting Cameroon to the world.",
         "description": "Worldwide logistics and supply chain management experts."
     },
-    {
-        "name": "Future Builders Construction",
-        "address": "987 Beach harbor, Akwa, Douala, Cameroon",
-        "phone": "+237-312-789-4567",
-        "website": "https://www.futurebuilders.com",
-        "image": "future_builders.png",
-        "membership_level": 1,
-        "tagline": "Building dreams, one brick at a time.",
-        "description": "Building the future with cutting-edge construction techniques."
-    },
+   
     {
         "name": "EduTech Solutions",
         "address": "246 Bongo square, Molyko, Buea, Cameroon",
         "phone": "+237-617-456-1234",
         "website": "https://www.edutechsolutions.com",
-        "image": "edutech.png",
+        "image": "edutech.svg",
         "membership_level": 2,
         "tagline": "Empowering education through technology.",
         "description": "Revolutionizing education through technology and innovation."
