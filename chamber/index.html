@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/directory-small.css">
     
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -71,17 +71,17 @@
             <section>
                 <h2>Current Weather</h2>
                 <div class="con2">
-                    <div class="waether-icon">
-                        <img src="images/weather-icon.png" alt="weather-icon">
-
+                    <div class="waether">
+                       <img id="weather-icon" src="" alt="">
                     </div>
                     <div>
+                        
                         <p id="temp"></p>
                         <p id="climate"></p>
                         <p>High: <span id="high"></span></p>
                         <p>Low: <span id="low"></span></p>
                         <p>Humidity: <span id="hum"></span></p>
-                        <p>Sunrise: <span id=" sunrise"></span></p>
+                        <p>Sunrise: <span id="sunrise"></span></p>
                         <p>Sunset: <span id="sunset"></span></p>
                     </div>
 
@@ -91,9 +91,13 @@
             <section>
                 <h2>Weather Forecast</h2>
                 <p>Today: <span id="wtoday"></span></p>
-                <p id="day2">: <span id="wtomorrow"></span></p>
-                <p id="day3">: <span id="wintwo"></span></p>
+                <p>Tomorrow: <span id="wtomorrow"></span></p>
+                <p>Day After: <span id="wintwo"></span></p>
             </section>
+        </div>
+
+        <div class="rand-cards" id="rand-cards">
+            
         </div>
 
     </main>

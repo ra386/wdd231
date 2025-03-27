@@ -12,7 +12,7 @@ async function apiFetch() {
     if (response.ok) {
       const data = await response.json();
       console.log(data); // testing only
-      // displayResults(data); // uncomment when ready
+      displayResults(data); // uncomment when ready
     } else {
         throw Error(await response.text());
     }
@@ -24,7 +24,7 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
-  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+  currentTemp.innerHTML = `${data.main.temp}&deg;C`;
   const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
   let desc = data.weather[0].description;
   weatherIcon.setAttribute('src', iconsrc);
@@ -32,18 +32,3 @@ function displayResults(data) {
   captionDesc.textContent = `${desc}`;
 }
 
-// import aCourse from "./course.mjs";
-
-// aCourse.init();
-
-//   document.querySelector("#enrollStudent").addEventListener("click", function () {
-//     const sectionNum = document.querySelector("#sectionNumber").value;
-//     aCourse.changeEnrollment(sectionNum);
-//   });
-//   document.querySelector("#dropStudent").addEventListener("click", function () {
-//     const sectionNum = document.querySelector("#sectionNumber").value;
-//     aCourse.changeEnrollment(sectionNum, false);
-//   });
-  
-
- 
