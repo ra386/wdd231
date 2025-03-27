@@ -95,4 +95,19 @@ async function apiFetch() {
 
   // Random Top level cards to display
 
+
+  async function fetchmembers() {
+    try {
+      const response = await fetch('data/members.json');
+      if (!response.ok) throw new Error('Failed to fetch members.json');
+      return await response.json();
+
+    } catch(error) {
+      console.error('Error Fetching Memebers', error);
+      return[];
+
+    }
+    
+  }
+
   
