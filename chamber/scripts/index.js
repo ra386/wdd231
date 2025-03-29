@@ -26,7 +26,7 @@ async function fetchfive() {
     const result = await fetch(fivedaysUrl);
     if (result.ok) {
       const info = await result.json();
-      console.log(info); // testing only
+      // console.log(info); 
       displayForcast(info); // uncomment when ready
     } else {
         throw Error(await result.text());
@@ -53,7 +53,7 @@ async function apiFetch() {
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        console.log(data); // testing only
+        // console.log(data); 
         displayResults(data); // uncomment when ready
       } else {
           throw Error(await response.text());
@@ -93,21 +93,113 @@ async function apiFetch() {
   }
 
 
+
+  async function fetchMembers() {
+    try {
+        const response = await fetch('data/members.json'); // Fetch JSON data from the directory
+        if (!response.ok) throw new Error('Failed to fetch members.json');
+        return await response.json();
+    } catch (error) {
+        console.error('Error fetching members:', error);
+        return [];
+    }
+}
+
+function getSpotlights(members) {
+  // Change membershipLevel to membership_level to match your JSON
+  const eligibleMembers = members.filter(member => member.membership_level === 2 || member.membership_level === 3);
+  
+  eligibleMembers.sort(() => Math.random() - 0.5);
+  return eligibleMembers.slice(0, 3);
+}
+
+function displaySpotlights(spotlights) {
+  const spotlightContainer = document.getElementById('spotlight-container');
+  spotlightContainer.innerHTML = '';
+
+  spotlights.forEach(member => {
+      const card = document.createElement('div');
+      card.classList.add('spotlight-card');
+      card.innerHTML = `
+          <h3>${member.name}</h3>
+          <img src="images/${member.image}" alt="${member.name}">
+          <p>${member.address}</p>
+          <p>${member.phone}</p>
+          <a href="${member.website}" target="_blank">Visit Website</a>
+          <p>Membership Level: ${member.membership_level === 2 ? 'Silver' : 'Gold'}</p>
+      `;
+      
+      spotlightContainer.appendChild(card);
+  });
+}
+
+async function init() {
+    const members = await fetchMembers();
+    const spotlights = getSpotlights(members);
+    displaySpotlights(spotlights);
+    await fetchfive();
+    // forecastApiFetch();
+}
+init();
+
+
+
   // Random Top level cards to display
 
 
-  async function fetchmembers() {
-    try {
-      const response = await fetch('data/members.json');
-      if (!response.ok) throw new Error('Failed to fetch members.json');
-      return await response.json();
+//   async function fetchmembers() {
+//     try {
+//       const response = await fetch('data/members.json');
+//       if (!response.ok) throw new Error('Failed to fetch members.json');
+//     console.log(responses); 
 
-    } catch(error) {
-      console.error('Error Fetching Memebers', error);
-      return[];
-
-    }
+//       return await response.json();
     
-  }
+      
+
+//     } catch(error) {
+//       console.error('Error Fetching Memebers', error);
+//       return[];
+
+//     }
+    
+//   }
+
+//   function getspotlight(members){
+//     const eligiblemembers = members.filter(member => member.membershipLevel === 2 || member.membershipLevel === 3);
+
+//     eligiblemembers.sort(() => Math.random() -0.5);
+
+//     return eligiblemembers.slice(0,3);
+//   }
+
+//   function displayspotlight(spotlights) {
+//     const spotlightContainer = document.getElementById('spotlight-container');
+
+//     spotlightContainer.innerHTML = '';
+
+//     spotlights.forEach(member => {
+//       const card = document.createElement('div');
+//       card.classList.add('spotlight-card');
+//       card.innerHTML = `
+//       <h3>${member.name}</h3>
+//       <img src="images/${member.image}" alt="${member.name}">
+//       <p>${member.address}</p>
+//       <p>${member.phone}</p> 
+//       <a href="${member.website}" target="_blank">Visit Website</a>
+//       <p>Membership Level: ${member.membershipLevel === 2 ? 'Silver' : 'Gold'}</p>`;
+//       spotlightContainer.appendChild(card);
+//     });
+//   }
+
+//   async function init() {
+//     const members = await fetchmembers();
+//     const spotlights = getspotlight(members);
+//     displayspotlight(spotlights);
+//     // forecastApiFetch();
+// }
+
+// // Initialize the spotlight feature
+// init();
 
   
