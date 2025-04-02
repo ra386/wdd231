@@ -22,30 +22,25 @@ bronzespan.onclick = function() {
   }
 // Silver
 
-  let bronze = document.getElementById("silver-modal");
-  let bronzebtn = document.getElementById("bronzeBtn");
-  let bronzespan = document.getElementsByClassName("bronzeclose")[0];
-  bronzebtn.onclick = function() {
+  let silver = document.getElementById("silver-modal");
+  let silverbtn = document.getElementById("silverBtn");
+  let siilverspan = document.getElementsByClassName("silverclose")[0];
+  silverbtn.onclick = function() {
       modal.style.display = "block";
     }
-  bronzespan.onclick = function() {
+  silverspan.onclick = function() {
       modal.style.display = "none";
     }
 
 // Non Gold
-let bronze = document.getElementById("silver-modal");
-  let bronzebtn = document.getElementById("bronzeBtn");
-  let bronzespan = document.getElementsByClassName("bronzeclose")[0];
-  bronzebtn.onclick = function() {
+  let gold = document.getElementById("gold-modal");
+  let goldbtn = document.getElementById("goldBtn");
+  let goldspan = document.getElementsByClassName("goldclose")[0];
+  goldbtn.onclick = function() {
       modal.style.display = "block";
     }
-  bronzespan.onclick = function() {
+  goldspan.onclick = function() {
       modal.style.display = "none";
     }
 
   
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
