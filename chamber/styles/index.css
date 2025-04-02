@@ -119,11 +119,43 @@ nav button{
 .container h2{
     margin-bottom: 10px;
 }
+picture  img{
+    object-fit: cover;
+    height: 600px;
+    width: 100%;
+}
+.over-lay {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: auto;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 50px;
+    background-color: beige;
+    padding: 10px;
+}
+
+.spotlight-card{
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    background-color: var(--primary-color2);
+    border-radius: 10px;
+    padding: 15px;
+
+}
+.spotlight-card img {
+    border-radius: 5px;
+}
 .spotlight-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
     text-align: center;
     margin-top: 50px;
+    
 
 }
 .spotlight-container img {

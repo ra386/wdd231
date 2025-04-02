@@ -129,6 +129,8 @@ function displaySpotlights(spotlights) {
           <p>Membership Level: ${member.membership_level === 2 ? 'Silver' : 'Gold'}</p>
       `;
       
+    
+      
       spotlightContainer.appendChild(card);
   });
 }
