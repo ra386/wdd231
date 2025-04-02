@@ -38,3 +38,23 @@ body {font-family: Arial, Helvetica, sans-serif;}
   text-decoration: none;
   cursor: pointer;
 }
+
+main{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    
+    
+}
+form label{
+    display: block;
+}
+form div{
+   margin-top: 15px;
+} 
+form input{
+    border-left: 5px solid black;
+    border-radius: 3px;
+    color: aqua;
+    
+}

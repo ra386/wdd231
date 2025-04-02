@@ -8,6 +8,11 @@ btn.onclick = function() {
 span.onclick = function() {
   modal.style.display = "none";
 }
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 
 // Bronze
 
@@ -24,7 +29,7 @@ bronzespan.onclick = function() {
 
   let silver = document.getElementById("silver-modal");
   let silverbtn = document.getElementById("silverBtn");
-  let siilverspan = document.getElementsByClassName("silverclose")[0];
+  let silverspan = document.getElementsByClassName("silverclose")[0];
   silverbtn.onclick = function() {
       modal.style.display = "block";
     }
@@ -32,15 +37,16 @@ bronzespan.onclick = function() {
       modal.style.display = "none";
     }
 
-// Non Gold
-  let gold = document.getElementById("gold-modal");
-  let goldbtn = document.getElementById("goldBtn");
-  let goldspan = document.getElementsByClassName("goldclose")[0];
-  goldbtn.onclick = function() {
-      modal.style.display = "block";
-    }
-  goldspan.onclick = function() {
-      modal.style.display = "none";
-    }
+
+
+let goldModal = document.getElementById("gold-modal");
+let goldBtn = document.getElementById("goldBtn");
+let goldSpan = document.getElementsByClassName("goldclose")[0];
+goldBtn.onclick = function() {
+  modal.style.display = "block";
+}
+goldSpan.onclick = function() {
+  modal.style.display = "none";
+}
 
   
