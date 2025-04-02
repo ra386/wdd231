@@ -124,6 +124,9 @@ picture  img{
     height: 600px;
     width: 100%;
 }
+
+
+
 .over-lay {
     position: absolute;
     top: 80%;
