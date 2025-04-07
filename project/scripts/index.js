@@ -23,5 +23,7 @@ function displaySpotlights(spotlights) {
     spotlights.forEach(car => {
         const card = document.createElement('div');
         card.classList.add('spotlight-card');
+        card.innerHTML='
+        ';
     })
 }

@@ -140,7 +140,7 @@ async function init() {
     const spotlights = getSpotlights(members);
     displaySpotlights(spotlights);
     await fetchfive();
-    // forecastApiFetch();
+    
 }
 init();
 
