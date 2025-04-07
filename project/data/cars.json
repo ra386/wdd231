@@ -1,0 +1,209 @@
+[
+    {
+        "name": "Ford Ranger",
+        "type": "Truck",
+        "year": "2019",
+        "Brand": "Ford",
+        "imagesrc": "ford-ranger.webp",
+        "description": "A Ford Ranger"      
+    },
+    {
+        "name": "Ford Mustang GT",
+        "type": "Sedan",
+        "year": "2000",
+        "Brand": "Ford",
+        "imagesrc": "ford-mustang-2000.webp",
+        "description": "A Ford Mustang GT"      
+    },
+    {
+        "name": "Mitsubishi Outlander",
+        "type": "Suv",
+        "year": "2017",
+        "Brand": "Mitsubishi",
+        "imagesrc": "mitsubishi-outlander.webp",
+        "description": "A Mitsubishi Outlander"      
+    },
+    {
+        "name": "Toyota Camry",
+        "type": "Sedan",
+        "year": "2020",
+        "Brand": "Toyota",
+        "imagesrc": "toyota-camry.webp",
+        "description": "A Toyota Camry"      
+    },
+    {
+        "name": "Toyota Rav4",
+        "type": "Suv",
+        "year": "2019",
+        "Brand": "Toyota",
+        "imagesrc": "toyota-rav4.webp",
+        "description": "A Toyota Rav4"      
+    },
+    {
+        "name": "Toyota Tacoma",
+        "type": "Truck",
+        "year": "2016",
+        "Brand": "Toyota",
+        "imagesrc": "toyota-tacoma.webp",
+        "description": "A Toyota Tacoma"      
+    },
+    {
+        "name": "Honda Pilot",
+        "type": "Suv",
+        "year": "2015",
+        "Brand": "Honda",
+        "imagesrc": "honda-pilot.webp",
+        "description": "A Honda Pilot"      
+    }, 
+    {
+        "name": "Nissan Pathfinder",
+        "type": "Suv",
+        "year": "2019",
+        "Brand": "Nissan",
+        "imagesrc": "nissan-pathfinder.webp",
+        "description": "A Nissan Pathfinder"      
+    }, 
+    {
+        "name": "Nissan Juke",
+        "type": "Sedan",
+        "year": "2014",
+        "Brand": "Nissan",
+        "imagesrc": "",
+        "description": "A Nissan Duke"      
+    },
+    {
+        "name": "Toyota 4Runner",
+        "type": "Suv",
+        "year": "2010",
+        "Brand": "Toyota",
+        "imagesrc": "toyota-4runner.webp",
+        "description": "A Toyota 4Runner"      
+    }, {
+        "name": "Kia Cadenz",
+        "type": "Sedan",
+        "year": "2016",
+        "Brand": "Kia Motors",
+        "imagesrc": "kia-cadenza.webp",
+        "description": "A Kia Cadenza"      
+    },
+    {
+        "name": "Aston Valkyrie",
+        "type": "Sport",
+        "year": "2018",
+        "Brand": "Aston Martin",
+        "imagesrc": "aston-valkyrie.webp",
+        "description": "An Aston Valkyrie"      
+    },
+    {
+        "name": "Aston Vantage GT4",
+        "type": "Sport",
+        "year": "2019",
+        "Brand": "Aston Martin",
+        "imagesrc": "aston-vantage-gt4.webp",
+        "description": "An Aston Vantage GT4"      
+    }, 
+    {
+        "name": "Rolls Royce Phantom",
+        "type": "Sedan",
+        "year": "2018",
+        "Brand": "Rolls Royce",
+        "imagesrc": "rolls-royce-phantom.webp",
+        "description": "A Rolls Royce Phantom"      
+    }, 
+    {
+        "name": "Nissan Altima",
+        "type": "Sedan",
+        "year": "2017",
+        "Brand": "Nissan",
+        "imagesrc": "nissan-altima.webp",
+        "description": "A Nissan Altima"      
+    }, 
+    {
+        "name": "Ford Ranger Raptor",
+        "type": "Truck",
+        "year": "2016",
+        "Brand": "Ford",
+        "imagesrc": "ford-ranger-raptor.webp",
+        "description": "A Ford Ranger Raptor"      
+    }, 
+    {
+        "name": "Range Rover",
+        "type": "Suv",
+        "year": "2016",
+        "Brand": "Land Rover",
+        "imagesrc": "range-rover.webp",
+        "description": "A Range Rover"      
+    },
+    {
+        "name": "Mercedes Benz AMG",
+        "type": "Sedan",
+        "year": "2022",
+        "Brand": "Mercedes",
+        "imagesrc": "mercedes-amg.webp",
+        "description": "A Mercedes Benz AMG"      
+    },
+    {
+        "name": "Audi Quattro",
+        "type": "Sedan",
+        "year": "2015",
+        "Brand": "Audi",
+        "imagesrc": "audi-quatro.webp",
+        "description": "An Audi Quattro"      
+    },
+    {
+        "name": "Lexus 350",
+        "type": "Suv",
+        "year": "2020",
+        "Brand": "Lexus",
+        "imagesrc": "lexus.webp",
+        "description": "A Lexus 350"      
+    },
+    {
+        "name": "Lamborghini Aventador",
+        "type": "Sport",
+        "year": "2018",
+        "Brand": "Lamborghini",
+        "imagesrc": "lamborghini-aventador.webp",
+        "description": "A Lamborghini Aventador"      
+    },
+    {
+        "name": "Ferrari Aperta",
+        "type": "Sport",
+        "year": "2017",
+        "Brand": "Ferrari",
+        "imagesrc": "ferrari-aperta.webp",
+        "description": "A Ferrari Aperta"      
+    },
+    {
+        "name": "Chevy Silverado",
+        "type": "Truck",
+        "year": "2016",
+        "Brand": "Chevrolette",
+        "imagesrc": "chevy-silverado.webp",
+        "description": "A Chevy Silverado"      
+    },
+    {
+        "name": "Kia Sportage",
+        "type": "Suv",
+        "year": "2015",
+        "Brand": "Kia Motors",
+        "imagesrc": "kia-sportage.webp",
+        "description": "A Kia Sportage"      
+    },
+    {
+        "name": "Nissan Titan",
+        "type": "Truck",
+        "year": "2016",
+        "Brand": "Nissan",
+        "imagesrc": "nissan-titan.webp",
+        "description": "A Nissan Titan"      
+    },
+    {
+        "name": "Cadillac XT5",
+        "type": "Suv",
+        "year": "2019",
+        "Brand": "Cadillac",
+        "imagesrc": "cadillac-xt5.webp",
+        "description": "A Cadillac XT5"      
+    }
+]

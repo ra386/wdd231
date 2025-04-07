@@ -129,6 +129,8 @@ function displaySpotlights(spotlights) {
           <p>Membership Level: ${member.membership_level === 2 ? 'Silver' : 'Gold'}</p>
       `;
       
+    
+      
       spotlightContainer.appendChild(card);
   });
 }
@@ -143,63 +145,5 @@ async function init() {
 init();
 
 
-
-  // Random Top level cards to display
-
-
-//   async function fetchmembers() {
-//     try {
-//       const response = await fetch('data/members.json');
-//       if (!response.ok) throw new Error('Failed to fetch members.json');
-//     console.log(responses); 
-
-//       return await response.json();
-    
-      
-
-//     } catch(error) {
-//       console.error('Error Fetching Memebers', error);
-//       return[];
-
-//     }
-    
-//   }
-
-//   function getspotlight(members){
-//     const eligiblemembers = members.filter(member => member.membershipLevel === 2 || member.membershipLevel === 3);
-
-//     eligiblemembers.sort(() => Math.random() -0.5);
-
-//     return eligiblemembers.slice(0,3);
-//   }
-
-//   function displayspotlight(spotlights) {
-//     const spotlightContainer = document.getElementById('spotlight-container');
-
-//     spotlightContainer.innerHTML = '';
-
-//     spotlights.forEach(member => {
-//       const card = document.createElement('div');
-//       card.classList.add('spotlight-card');
-//       card.innerHTML = `
-//       <h3>${member.name}</h3>
-//       <img src="images/${member.image}" alt="${member.name}">
-//       <p>${member.address}</p>
-//       <p>${member.phone}</p> 
-//       <a href="${member.website}" target="_blank">Visit Website</a>
-//       <p>Membership Level: ${member.membershipLevel === 2 ? 'Silver' : 'Gold'}</p>`;
-//       spotlightContainer.appendChild(card);
-//     });
-//   }
-
-//   async function init() {
-//     const members = await fetchmembers();
-//     const spotlights = getspotlight(members);
-//     displayspotlight(spotlights);
-//     // forecastApiFetch();
-// }
-
-// // Initialize the spotlight feature
-// init();
 
   
