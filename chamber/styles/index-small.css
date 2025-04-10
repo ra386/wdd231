@@ -29,6 +29,20 @@
         text-align: center;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
     }
+    .over-lay {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: auto;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-weight: bolder;
+        font-size: 50px;
+        background-color: var(--primary-color2);
+        padding: 10px;
+    }
 
     
     .hamburger.open {
