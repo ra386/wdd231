@@ -206,6 +206,7 @@ nav button{
     color: var(--secondary-color1);
     background-color: var(--primary-color1);
     padding: 10px;
+    
 }
 ul{
     text-align: left;
@@ -213,6 +214,8 @@ ul{
 }
 .container section{
     background-color: var(--primary-color2);
+    border-radius: 10px;
+    padding: 5px;
 }
 picture  img{
     object-fit: cover;

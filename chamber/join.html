@@ -50,7 +50,7 @@
            </div>
         </nav>
       
-      <a href=""><img src="images/quatermoon.png" alt="" class="view"></a>
+      <!-- <a href=""><img src="images/quatermoon.png" alt="" class="view"></a> -->
       </div>
   </div>
     </header>
@@ -91,11 +91,27 @@
                         autocomplete="tel" required>
                 </div>
                 <div>
-                    <label for="organization-name">Organization</label>
+                    <label for="membership-level">Membership Level</label>
+                    <select name="membership-level" id="membership-level">
+                        <option value="" disabled selected>Choose One </option>
+                        <option value="non-profit">Non-Profit Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                      </select>
+                </div>
+                <div>
+                    <label for="organization-name">Organization Name</label>
                     <input type="text" id="organization-name" name="organizationName"
                         title="Enter the name of your business/organization" autocomplete="organization"
                         required>
                 </div>
+                <div class="din">
+                    <label for="review">Organisation Description</label>
+                    <textarea id="review" name="review"></textarea>
+                </div>
+                   <input type="hidden" name="timestamp" id="timestamp">
+                   <input type="submit" value="Submit" id="submit" class="fin">
             </div>
         </form>
 

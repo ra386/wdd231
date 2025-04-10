@@ -1,10 +1,60 @@
 @media only screen and (max-width: 700px)
 {
+    .hamburger {
+        display: block; 
+        font-size: 30px;
+        color: whitesmoke;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+   
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: var(--primary-color1);
+        width: 100%;
+        left: 0;
+    }
+
+    
+    .menu.open {
+        display: flex;
+    }
+
+    .menu a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+    }
+
+    
+    .hamburger.open {
+        color: var(--primary-color2); 
+    }
+
     .container{
         display: block;
     }
+    .container section{
+        margin-bottom: 10px;
+    }
     .spotlight-container{
         display: block;
+        
+    }
+    .spotlight-card{
+        margin-bottom: 15px;
+    }
+    footer{
+        display: block;
+        text-align: center;
+    }
+    .space{
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
    
      
