@@ -49,4 +49,17 @@ goldSpan.onclick = function() {
   modal.style.display = "none";
 }
 
+
+const menu = document.querySelector('nav .menu');
+const hamburgerButton = document.querySelector('.hamburger');
+
+hamburgerButton.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    hamburgerButton.classList.toggle('open');
+    hamburgerButton.textContent = menu.classList.contains('open') ? '✖' : '☰';
+});
+ 
+
+const lastmod = document.querySelector("#lastmodified");
+lastmod.textContent = `Last Modified: ${document.lastModified}`;
   

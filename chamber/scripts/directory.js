@@ -51,4 +51,3 @@ hamburgerButton.addEventListener('click', () => {
     hamburgerButton.textContent = menu.classList.contains('open') ? '✖' : '☰';
 });
  
-

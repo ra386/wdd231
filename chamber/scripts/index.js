@@ -156,4 +156,5 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
- 
+const lastmod = document.querySelector("#lastmodified");
+lastmod.textContent = `Last Modified: ${document.lastModified}`;

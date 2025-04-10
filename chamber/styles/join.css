@@ -160,100 +160,52 @@ main{
     
     
 }
-/* form label{
-    display: block;
-}
-form div{
-   margin-top: 15px;
-} 
-form input{
-    border-left: 4px solid black;
-    border-radius: 3px;
-    height: 30px;
-    width: 250px;
-    
-} */
-
 
 
 form {
-    margin: 1rem 2%;
-  
-    label {
-      display: block;
-      font-size: .8rem;
-      color: purple;
-      padding-top: .2rem;
-    }
-    h3 {
-      font-size: .9rem;
-      color: #E07A5F;
-      margin: 1.5rem 0 .2rem 0;
-      border-bottom: 1px solid #eee;
-    }
-  
-    input[type=text],
-    input[type=tel],
-    input[type=date],
-    input[type=email],
-    select {
-      display: block;
-      margin: .1rem 0 1rem 0 ;
-      padding: .3rem;
-      border: 1px solid #999;
-      border-radius: 4px;
-      border-left-width: 5px;
-      border-left-color:#555;
-      font-size: 1rem;
-      color: #3D405B;
-      width: 250px;
-    }
-    textarea{
-      display: block;
-      margin: .1rem 0 1rem 0 ;
-      padding: .3rem;
-      border: 1px solid #999;
-      border-radius: 4px;
-      border-left-width: 5px;
-      border-left-color:#555;
-      font-size: 1rem;
-      color: #3D405B;
-      width: 250px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+form label {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--primary-color1);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
 
-    }
-  
-    input:required {border-left-color: var(--secondary-color2);}
-    input:focus {border-left-color: black; outline:none;}
-    input:required:valid{border-left-color: var(--primary-color1);}
-  
-    input[type=submit] {
-      border: none;
-      text-align: center;
-      background-color: #3D405B;
-      color: white;
-      border-radius: 1rem;
-      padding: .75rem 1.5rem;
-      margin: 2rem 0;
-      font-size: 1.2rem;
-      -webkit-appearance: none;
-      appearance: none;
-    }
-  }
-  input:-webkit-autofill{
-    -webkit-text-fill-color: #3D405B;
-  }
-  
-  #results {
-    background-color: #F4F1DE;
-    padding: 0 1rem;
-    border: 1px solid #E07A5F;
+form input[type=text],
+form input[type=tel],
+form input[type=email],
+form select {
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
     border-radius: 6px;
-  }
+}
 
+form textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    min-height: 120px;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+}
 
+form input[type=submit] {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: whitesmoke;
+    background-color: var(--primary-color1);
+}
+form input[type=submit]:hover{
+    background-color:#517eae ;
+}
 
-
-.grades button{
+ .grades button{
     margin-top: 10px;
     padding: 8px;
     border-radius: 20px;
@@ -261,12 +213,36 @@ form {
 .grades{
     text-align: center;
 }
-section{
+.grades section{
     margin-top: 15px;
     background-color: var(--primary-color2);
-    padding: 20px;
+    padding: 10px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+.grades {
+    padding: 1.5rem;
+}
+
+.grades h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color1);
+}
+
+.grades section {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+}
+
+.grades h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.grades button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
 }
 
 
@@ -292,5 +268,89 @@ footer p{
 
 
 
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block; 
+        font-size: 30px;
+        color: whitesmoke;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
 
-     
+   
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: var(--primary-color1);
+        width: 100%;
+        left: 0;
+    }
+
+    
+    .menu.open {
+        display: flex;
+    }
+
+    .menu a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+    }
+    .hamburger.open {
+        color: var(--primary-color2); 
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    form input[type=text],
+    form input[type=tel],
+    form input[type=date],
+    form input[type=email],
+    form select,
+    form textarea {
+        width: 100%;
+    }
+
+    .grades {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .grades section {
+        margin-bottom: 20px;
+    }
+
+    #submit {
+        width: 100%;
+    }
+    footer{
+        display: block;
+        text-align: center;
+    }
+    .space{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+   
+} 
+
+
+
+
+
