@@ -3,116 +3,71 @@
         "name": "Ford Ranger",
         "type": "Truck",
         "year": "2019",
-        "Brand": "Ford",
-<<<<<<< HEAD
+        "brand": "Ford",
         "imagesrc": "ford-ranger.webp",
-=======
-        "imagesrc": "",
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
         "description": "A Ford Ranger"      
     },
     {
         "name": "Ford Mustang GT",
         "type": "Sedan",
         "year": "2000",
-        "Brand": "Ford",
-<<<<<<< HEAD
+        "brand": "Ford",
         "imagesrc": "ford-mustang-2000.webp",
-=======
-        "imagesrc": "",
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
         "description": "A Ford Mustang GT"      
     },
     {
         "name": "Mitsubishi Outlander",
-<<<<<<< HEAD
         "type": "Suv",
         "year": "2017",
-        "Brand": "Mitsubishi",
+        "brand": "Mitsubishi",
         "imagesrc": "mitsubishi-outlander.webp",
-=======
-        "type": "SUV",
-        "year": "2017",
-        "Brand": "Mitsubishi",
-        "imagesrc": "",
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
         "description": "A Mitsubishi Outlander"      
     },
     {
         "name": "Toyota Camry",
         "type": "Sedan",
         "year": "2020",
-        "Brand": "Toyota",
-<<<<<<< HEAD
+        "brand": "Toyota",
         "imagesrc": "toyota-camry.webp",
-=======
-        "imagesrc": "",
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
         "description": "A Toyota Camry"      
     },
     {
         "name": "Toyota Rav4",
-<<<<<<< HEAD
         "type": "Suv",
         "year": "2019",
-        "Brand": "Toyota",
+        "brand": "Toyota",
         "imagesrc": "toyota-rav4.webp",
-=======
-        "type": "SUV",
-        "year": "2019",
-        "Brand": "Toyota",
-        "imagesrc": "",
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
         "description": "A Toyota Rav4"      
     },
     {
         "name": "Toyota Tacoma",
         "type": "Truck",
         "year": "2016",
-        "Brand": "Toyota",
-<<<<<<< HEAD
+        "brand": "Toyota",
         "imagesrc": "toyota-tacoma.webp",
-=======
-        "imagesrc": "",
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
         "description": "A Toyota Tacoma"      
     },
     {
         "name": "Honda Pilot",
-<<<<<<< HEAD
         "type": "Suv",
         "year": "2015",
-        "Brand": "Honda",
+        "brand": "Honda",
         "imagesrc": "honda-pilot.webp",
-=======
-        "type": "SUV",
-        "year": "2015",
-        "Brand": "Honda",
-        "imagesrc": "",
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
         "description": "A Honda Pilot"      
     }, 
     {
         "name": "Nissan Pathfinder",
         "type": "Suv",
         "year": "2019",
-        "Brand": "Nissan",
-<<<<<<< HEAD
+        "brand": "Nissan",
         "imagesrc": "nissan-pathfinder.webp",
         "description": "A Nissan Pathfinder"      
     }, 
     {
         "name": "Nissan Juke",
-=======
-        "imagesrc": "",
-        "description": "A Nissan Pathfinder"      
-    }, 
-    {
-        "name": "Nissan Duke",
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
         "type": "Sedan",
         "year": "2014",
-        "Brand": "Nissan",
+        "brand": "Nissan",
         "imagesrc": "",
         "description": "A Nissan Duke"      
     },
@@ -120,154 +75,102 @@
         "name": "Toyota 4Runner",
         "type": "Suv",
         "year": "2010",
-        "Brand": "Toyota",
-<<<<<<< HEAD
+        "brand": "Toyota",
         "imagesrc": "toyota-4runner.webp",
-=======
-        "imagesrc": "",
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
         "description": "A Toyota 4Runner"      
     }, {
         "name": "Kia Cadenz",
         "type": "Sedan",
         "year": "2016",
-        "Brand": "Kia Motors",
-<<<<<<< HEAD
+        "brand": "Kia Motors",
         "imagesrc": "kia-cadenza.webp",
         "description": "A Kia Cadenza"      
-=======
-        "imagesrc": "",
-        "description": "A Kia Cadenz"      
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
     },
     {
         "name": "Aston Valkyrie",
         "type": "Sport",
         "year": "2018",
-        "Brand": "Aston Martin",
-<<<<<<< HEAD
+        "brand": "Aston Martin",
         "imagesrc": "aston-valkyrie.webp",
-=======
-        "imagesrc": "",
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
         "description": "An Aston Valkyrie"      
     },
     {
         "name": "Aston Vantage GT4",
         "type": "Sport",
         "year": "2019",
-        "Brand": "Aston Martin",
-<<<<<<< HEAD
+        "brand": "Aston Martin",
         "imagesrc": "aston-vantage-gt4.webp",
-=======
-        "imagesrc": "",
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
         "description": "An Aston Vantage GT4"      
     }, 
     {
         "name": "Rolls Royce Phantom",
         "type": "Sedan",
         "year": "2018",
-        "Brand": "Rolls Royce",
-<<<<<<< HEAD
+        "brand": "Rolls Royce",
         "imagesrc": "rolls-royce-phantom.webp",
         "description": "A Rolls Royce Phantom"      
-=======
-        "imagesrc": "",
-        "description": ""      
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
     }, 
     {
         "name": "Nissan Altima",
         "type": "Sedan",
         "year": "2017",
-        "Brand": "Nissan",
-<<<<<<< HEAD
+        "brand": "Nissan",
         "imagesrc": "nissan-altima.webp",
-=======
-        "imagesrc": "",
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
         "description": "A Nissan Altima"      
     }, 
     {
         "name": "Ford Ranger Raptor",
         "type": "Truck",
         "year": "2016",
-        "Brand": "Ford",
-<<<<<<< HEAD
+        "brand": "Ford",
         "imagesrc": "ford-ranger-raptor.webp",
-=======
-        "imagesrc": "",
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
         "description": "A Ford Ranger Raptor"      
     }, 
     {
         "name": "Range Rover",
         "type": "Suv",
         "year": "2016",
-        "Brand": "Land Rover",
-<<<<<<< HEAD
+        "brand": "Land Rover",
         "imagesrc": "range-rover.webp",
         "description": "A Range Rover"      
-=======
-        "imagesrc": "",
-        "description": ""      
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
     },
     {
         "name": "Mercedes Benz AMG",
         "type": "Sedan",
         "year": "2022",
-        "Brand": "Mercedes",
-<<<<<<< HEAD
+        "brand": "Mercedes",
         "imagesrc": "mercedes-amg.webp",
-=======
-        "imagesrc": "",
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
         "description": "A Mercedes Benz AMG"      
     },
     {
         "name": "Audi Quattro",
         "type": "Sedan",
         "year": "2015",
-        "Brand": "Audi",
-<<<<<<< HEAD
+        "brand": "Audi",
         "imagesrc": "audi-quatro.webp",
-=======
-        "imagesrc": "",
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
         "description": "An Audi Quattro"      
     },
     {
         "name": "Lexus 350",
         "type": "Suv",
         "year": "2020",
-        "Brand": "Lexus",
-<<<<<<< HEAD
+        "brand": "Lexus",
         "imagesrc": "lexus.webp",
-=======
-        "imagesrc": "",
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
         "description": "A Lexus 350"      
     },
     {
         "name": "Lamborghini Aventador",
         "type": "Sport",
         "year": "2018",
-        "Brand": "Lamborghini",
-<<<<<<< HEAD
+        "brand": "Lamborghini",
         "imagesrc": "lamborghini-aventador.webp",
-=======
-        "imagesrc": "",
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
         "description": "A Lamborghini Aventador"      
     },
     {
         "name": "Ferrari Aperta",
         "type": "Sport",
         "year": "2017",
-        "Brand": "Ferrari",
-<<<<<<< HEAD
+        "brand": "Ferrari",
         "imagesrc": "ferrari-aperta.webp",
         "description": "A Ferrari Aperta"      
     },
@@ -275,7 +178,7 @@
         "name": "Chevy Silverado",
         "type": "Truck",
         "year": "2016",
-        "Brand": "Chevrolette",
+        "brand": "Chevrolette",
         "imagesrc": "chevy-silverado.webp",
         "description": "A Chevy Silverado"      
     },
@@ -283,7 +186,7 @@
         "name": "Kia Sportage",
         "type": "Suv",
         "year": "2015",
-        "Brand": "Kia Motors",
+        "brand": "Kia Motors",
         "imagesrc": "kia-sportage.webp",
         "description": "A Kia Sportage"      
     },
@@ -291,7 +194,7 @@
         "name": "Nissan Titan",
         "type": "Truck",
         "year": "2016",
-        "Brand": "Nissan",
+        "brand": "Nissan",
         "imagesrc": "nissan-titan.webp",
         "description": "A Nissan Titan"      
     },
@@ -299,86 +202,8 @@
         "name": "Cadillac XT5",
         "type": "Suv",
         "year": "2019",
-        "Brand": "Cadillac",
+        "brand": "Cadillac",
         "imagesrc": "cadillac-xt5.webp",
         "description": "A Cadillac XT5"      
-=======
-        "imagesrc": "",
-        "description": "A Ferrari Aperta"      
-    },
-    {
-        "name": "",
-        "type": "",
-        "year": "",
-        "Brand": "",
-        "imagesrc": "",
-        "description": ""      
-    },
-    {
-        "name": "",
-        "type": "",
-        "year": "",
-        "Brand": "",
-        "imagesrc": "",
-        "description": ""      
-    },
-    {
-        "name": "",
-        "type": "",
-        "year": "",
-        "Brand": "",
-        "imagesrc": "",
-        "description": ""      
-    },{
-        "name": "",
-        "type": "",
-        "year": "",
-        "Brand": "",
-        "imagesrc": "",
-        "description": ""      
-    },{
-        "name": "",
-        "type": "",
-        "year": "",
-        "Brand": "",
-        "imagesrc": "",
-        "description": ""      
-    },{
-        "name": "",
-        "type": "",
-        "year": "",
-        "Brand": "",
-        "imagesrc": "",
-        "description": ""      
-    },{
-        "name": "",
-        "type": "",
-        "year": "",
-        "Brand": "",
-        "imagesrc": "",
-        "description": ""      
-    },{
-        "name": "",
-        "type": "",
-        "year": "",
-        "Brand": "",
-        "imagesrc": "",
-        "description": ""      
-    },{
-        "name": "",
-        "type": "",
-        "year": "",
-        "Brand": "",
-        "imagesrc": "",
-        "description": ""      
-    },
-    {
-        "name": "",
-        "type": "",
-        "year": "",
-        "Brand": "",
-        "imagesrc": "",
-        "description": ""      
->>>>>>> f03ffbf9843fe4c48a51d0289f768c2e0e7c2b34
     }
 ]

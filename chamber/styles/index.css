@@ -78,10 +78,10 @@ header {
     gap: 1rem;
     justify-content: end;
 }
-.view{
+/* .view{
     height:75px;
     width: 75px;
-}
+} */
 
 .menu a {
     text-decoration: none;
@@ -108,16 +108,111 @@ nav {
 nav button{
     display: none;
 }
+#comps{
+    margin: 30px;
+}
+
+.toggle-view{
+    text-align: center; 
+    background-color: var(--primary-color2);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.toggle-view button{
+    margin-right: 12px;
+    padding: 10px;
+}
+
+/* Grid View */
+#comps.grid-view {
+
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    align-items: center;
+    
+}
+.cards{
+    margin: 0;
+    padding: 15px; 
+    border: 1px solid #ccc; 
+    background-color: var(--primary-color2); 
+    text-align: center; 
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+#comps.list-view .cards img {
+    display: none;
+    
+}
+
+#comps.list-view .cards {
+   display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0;
+    padding: 0.25rem;
+    align-items: end;
+    padding: 15px;
+
+}
+#comps.list-view .cards h2{
+   font-size: 20px;
+}
+#comps.list-view .cards h3
+{
+    font-size: 17px;
+}
+#comps.list-view .cards:nth-child(even) a{
+    color: whitesmoke;
+}
+#comps.list-view .cards:nth-child(even) {
+    background-color: var(--secondary-color1);
+    padding: 15px;
+    color: whitesmoke;
+}
+
+
+
+#comps.grid-view {
+    margin: 0; 
+    padding: 10px; 
+    text-align: center; 
+}
+
+.cards img {
+    width: auto ;
+    height: 250px; 
+   
+
+    border-radius: 5px;
+}
 
 .container
 {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    margin-top: 20px;
+    gap: 20px;
+    padding: 20px;
     text-align: center;
+    margin-left: 40px;
+    /* margin-right: 20px; */
+
 }
 .container h2{
     margin-bottom: 10px;
+    color: var(--secondary-color1);
+    background-color: var(--primary-color1);
+    padding: 10px;
+}
+ul{
+    text-align: left;
+   
+}
+.container section{
+    background-color: var(--primary-color2);
 }
 picture  img{
     object-fit: cover;
@@ -129,7 +224,7 @@ picture  img{
 
 .over-lay {
     position: absolute;
-    top: 80%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -138,8 +233,11 @@ picture  img{
     text-transform: capitalize;
     font-weight: bolder;
     font-size: 50px;
-    background-color: beige;
+    background-color: var(--primary-color2);
     padding: 10px;
+}
+.over-lay:hover{
+    background-color: var(--back-color-color2);
 }
 
 .spotlight-card{
@@ -157,13 +255,14 @@ picture  img{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     text-align: center;
-    margin-top: 50px;
+    margin: 50px;
     
 
 }
 .spotlight-container img {
     height: 100px;
 }
+
 
 footer{
     display: flex;

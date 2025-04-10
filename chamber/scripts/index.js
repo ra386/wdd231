@@ -145,5 +145,15 @@ async function init() {
 init();
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const menu = document.querySelector('.menu');
+  const hamburgerButton = document.querySelector('.hamburger');
 
-  
+  hamburgerButton.addEventListener('click', () => {
+      menu.classList.toggle('open');
+      hamburgerButton.classList.toggle('open');
+      hamburgerButton.textContent = menu.classList.contains('open') ? '✖' : '☰';
+  });
+});
+
+ 

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    
+}
+body{
+    text-align: center;
+    background-color:whitesmoke ;
+}
+
+.intro{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 10px;
+}
+
+.sub{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 10px;
+}
+h2{
+    color: #e74c3c;
+}
