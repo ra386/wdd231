@@ -33,12 +33,11 @@ h3{
     font-size: 20px;
 }
 
-
 header {
     display: block;
     unicode-bidi: isolate;
     background-color: var(--primary-color1);
-    color: var(--back-color-color2);
+    color: white;
 }
 
 .header-top {
@@ -86,7 +85,7 @@ header {
 .menu a {
     text-decoration: none;
     text-transform: capitalize;
-    color: var(--back-color-color2);
+    color: white;
 }
 .menu a:hover{
     text-decoration: underline;
@@ -116,7 +115,7 @@ nav button{
     background-color: var(--primary-color2);
     border-radius: 8px;
     overflow: hidden;
-
+    color: #000000;
     display: grid;
     grid-template-areas: 
 
@@ -218,7 +217,7 @@ footer {
     justify-content: space-between;
     padding: 20px;
     background-color: var(--primary-color1);
-    color: var(--back-color-color2);
+    color: white;
     /* position:fixed;  */
     bottom: 0;
     width: 100%;
@@ -228,7 +227,7 @@ footer {
 
 footer a {
     margin-right: 35px;
-    color: var(--back-color-color2);
+    color: white;
     text-decoration: none;
 }
 
