@@ -54,7 +54,7 @@ async function apiFetch() {
       if (response.ok) {
         const data = await response.json();
         // console.log(data); 
-        displayResults(data); // uncomment when ready
+        displayResults(data); 
       } else {
           throw Error(await response.text());
       }
@@ -96,7 +96,7 @@ async function apiFetch() {
 
   async function fetchMembers() {
     try {
-        const response = await fetch('data/members.json'); // Fetch JSON data from the directory
+        const response = await fetch('data/members.json'); 
         if (!response.ok) throw new Error('Failed to fetch members.json');
         return await response.json();
     } catch (error) {
@@ -106,7 +106,7 @@ async function apiFetch() {
 }
 
 function getSpotlights(members) {
-  // Change membershipLevel to membership_level to match your JSON
+  
   const eligibleMembers = members.filter(member => member.membership_level === 2 || member.membership_level === 3);
   
   eligibleMembers.sort(() => Math.random() - 0.5);
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const lastmod = document.querySelector("#lastmodified");
 lastmod.textContent = `Last Modified: ${document.lastModified}`;
 
-   // Wayfinding effect for active navigation link
+   
    const path = window.location.pathname;
    const currentPage = path.substring(path.lastIndexOf('/') + 1);
    const navLinks = document.querySelectorAll('.menu a');

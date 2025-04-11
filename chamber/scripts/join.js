@@ -63,7 +63,7 @@ hamburgerButton.addEventListener('click', () => {
 const lastmod = document.querySelector("#lastmodified");
 lastmod.textContent = `Last Modified: ${document.lastModified}`;
   
-   // Wayfinding effect for active navigation link
+   
    const path = window.location.pathname;
    const currentPage = path.substring(path.lastIndexOf('/') + 1);
    const navLinks = document.querySelectorAll('.menu a');

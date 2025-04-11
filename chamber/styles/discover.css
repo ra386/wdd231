@@ -149,33 +149,26 @@ nav button{
     min-height: 300px;
   }
   
-
-/* 
-.cards button{
-    margin: 0.5rem 5px;
-    grid-area: button;
-} */
-
 .portrait {
-    background-color: var(--back-color-color2); /* light gray background for subtlety */
-    color: var(--secondary-color1);              /* dark text for readability */
-    border: 1px solid var(--primary-color1);     /* sharp blue border */
+    background-color: var(--back-color-color2); 
+    color: var(--secondary-color1);              
+    border: 1px solid var(--primary-color1);     
     border-radius: 8px;
     padding: 1rem;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .portrait h2 {
-    color: var(--primary-color1); /* titles in dark blue */
+    color: var(--primary-color1); 
 }
 
 .portrait p,
 .portrait address {
-    color: var(--secondary-color1); /* general text stays dark for clarity */
+    color: var(--secondary-color1); 
 }
 
 .portrait button {
-    background-color: var(--primary-color1); /* dark blue button */
+    background-color: var(--primary-color1); 
     color: white;
     padding: 0.4rem 0.8rem;
     font-size: 0.9rem;
@@ -187,30 +180,8 @@ nav button{
 }
 
 .portrait button:hover {
-    background-color: #24466b; /* darker shade of --primary-color1 for hover */
+    background-color: #24466b; 
 }
-
-
-/* footer{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: var(--primary-color1);
-    color:var(--back-color-color2);
-}
-footer a{
-    margin-right: 35px;
-    color: var(--back-color-color2);
-    text-decoration: none;
-}
-footer img{
-    height: 48px;
-    width: 48px;
-}
-footer p{
-    margin-top: 5px;
-} */
-
 
 footer {
     display: flex;
@@ -218,11 +189,10 @@ footer {
     padding: 20px;
     background-color: var(--primary-color1);
     color: white;
-    /* position:fixed;  */
     bottom: 0;
     width: 100%;
     z-index: 100;
-    min-height: 80px; /* Prevents height shift */
+    min-height: 80px; 
 }
 
 footer a {
@@ -233,12 +203,12 @@ footer a {
 
 footer img {
     height: 48px;
-    width: 48px; /* Set fixed size to prevent shifting */
+    width: 48px; 
 }
 
 footer p {
     margin-top: 5px;
-    font-size: 14px; /* Ensures consistency */
+    font-size: 14px; 
 }
 
 footer .space {
@@ -248,6 +218,16 @@ footer .space {
     gap: 15px;
 }
 
+#results{
+    text-align: center;
+    padding: 20px;
+}
+#results h2{
+    margin-bottom: 20px;
+}
+#results p{
+    margin-bottom: 10px;
+}
 
 
 @media only screen and (max-width: 600px) {

@@ -2,6 +2,7 @@ const myinfo = new URLSearchParams(window.location.search);
 // console.log(myinfo);
 
 document.querySelector('#results').innerHTML =`
+<h2>Application Details</h2>
 <p>Merbership request for ${myinfo.get('firstName')} ${myinfo.get('lastName')} for a ${myinfo.get('membership-level')}</p>
 <p>Organisation Name: ${myinfo.get('organizationName')}</p>
 <p>Organisation Description: ${myinfo.get('review')}</p>

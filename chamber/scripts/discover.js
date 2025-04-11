@@ -36,7 +36,7 @@ hamburgerButton.addEventListener('click', () => {
     hamburgerButton.textContent = menu.classList.contains('open') ? '✖' : '☰';
 });
  
-   // Wayfinding effect for active navigation link
+   
    const path = window.location.pathname;
    const currentPage = path.substring(path.lastIndexOf('/') + 1);
    const navLinks = document.querySelectorAll('.menu a');
