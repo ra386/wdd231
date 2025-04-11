@@ -308,6 +308,16 @@ footer .space {
         "photo button"
         ;
     }
+    .portrait figure{
+        width: 100%;
+        grid-area: photo;
+        transition: transform 0.3s ease;
+    
+    }
+    .portrait figure:hover img{
+        transform: scale(1.05);
+
+    }
 
 }
 
@@ -323,4 +333,14 @@ footer .space {
 
         ;
     }   
+    .portrait figure{
+        width: 100%;
+        grid-area: photo;
+        transition: transform 0.3s ease;
+    
+    }
+    .portrait figure:hover img{
+        transform: scale(1.05);
+
+    }
 }

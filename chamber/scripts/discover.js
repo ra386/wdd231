@@ -15,7 +15,7 @@ async function fetchInterest() {
         section.innerHTML = `
         <h2>${intrest.name}</h2>
         <figure>
-        <img src="images/${intrest.photo_url}" alt="${intrest.name}" width="300" height="200">
+        <img src="images/${intrest.photo_url}" alt="${intrest.name}"loading="lazy" width="300" height="200">
         </figure>
         <address>Location: ${intrest.address}</address>
         <p>${intrest.description}</p>
