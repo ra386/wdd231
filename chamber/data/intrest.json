@@ -1,0 +1,59 @@
+ [
+      
+      {
+        "name": "Waza National Park",
+        "address": "Near Waza town, Far North Region",
+        "cost": "$50–$150 (safari tour)",
+        "description": "Cameroon's premier wildlife park with elephants, lions and cheetahs.",
+        "photo_url": "park-national.webp"
+      },
+      {
+        "name": "Limbe",
+        "address": "Limbe, Fako Division",
+        "cost": "$5–$10 (wildlife center)",
+        "description": "Coastal town with black sand beaches and primate rescue center.",
+        "photo_url": "limbe-garden.webp"
+      },
+      {
+        "name": "Mount Cameroon",
+        "address": "Buea, Southwest Region",
+        "cost": "$150–$400 (guided hike)",
+        "description": "West Africa's tallest peak (4,040m) and active volcano with rainforests, savannahs and lava fields.",
+        "photo_url": "mt-cameroon.webp"
+      },
+      {
+        "name": "Dja Faunal Reserve",
+        "address": "Near Somalomo, South Region",
+        "cost": "$100–$300 (guided tour)",
+        "description": "UNESCO rainforest reserve with gorillas and forest elephants.",
+        "photo_url": "fauna.webp"
+      },
+      {
+        "name": "Bamenda Highlands",
+        "address": "Bamenda, Northwest Region",
+        "cost": "$50–$150 (trekking)",
+        "description": "Mountainous region with crater lakes and waterfalls.",
+        "photo_url": "bamenda.webp"
+      },
+      {
+        "name": "Kribi",
+        "address": "Kribi, Ocean Division",
+        "cost": "$10–$20 (waterfalls visit)",
+        "description": "Beach town with white sand and ocean waterfalls.",
+        "photo_url": "kribi.webp"
+      },
+      {
+        "name": "Foumban",
+        "address": "Foumban, West Region",
+        "cost": "$3–$5 (palace museum)",
+        "description": "Cultural capital of the Bamoun Kingdom with royal palace.",
+        "photo_url": "foumban.webp"
+      },
+      {
+        "name": "Ring Road",
+        "address": "Northwest Region circuit",
+        "cost": "$20–$50 (motorbike rental)",
+        "description": "Scenic route through traditional villages and landscapes.",
+        "photo_url": "ring-road.webp"
+      }
+]

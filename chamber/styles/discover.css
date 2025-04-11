@@ -1,0 +1,327 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+}
+:root
+{
+    --primary-color1: #2E5A88;
+    --primary-color2: #87CEEB ;
+    --secondary-color1: #333333;
+    --secondary-color2:#FF6F61;
+    --back-color-color2:#F5F5F5 ;
+}
+body{
+    background-color: whitesmoke;
+    font-family: Oswald, Roboto, Georgia;
+}
+h1 {
+    font-size: 60px;
+}
+
+h1 {
+
+    margin: 0px;
+}
+
+h2 {
+    
+    font-size: 24px;
+    font-family: PT Sans;
+}
+h3{
+    font-size: 20px;
+}
+
+
+header {
+    display: block;
+    unicode-bidi: isolate;
+    background-color: var(--primary-color1);
+    color: var(--back-color-color2);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.header-top-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    padding-right: 20px;
+    gap: 10px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+    justify-content: end;
+}
+.view{
+    height:75px;
+    width: 75px;
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--back-color-color2);
+}
+.menu a:hover{
+    text-decoration: underline;
+    
+}
+
+
+.menu a.active {
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+nav button{
+    display: none;
+}
+
+
+.portrait{
+    margin: 1rem 8px;
+    border: 1px var(--secondary-color1);
+    background-color: var(--primary-color2);
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+
+    "name"
+    "photo"
+    "description"
+    "address"
+    "button"
+    ;
+}
+.portrait h2{
+    margin: 1rem 10px;
+    grid-area: name;
+}
+.portrait figure{
+    width: 100%;
+    grid-area: photo;
+
+}
+.portrait p{
+    margin: 1rem 10px;
+    grid-area: description;
+
+}
+.portrait address{
+    margin: 1rem 10px;
+    grid-area: address;
+
+}
+.portrait {
+    min-height: 300px;
+  }
+  
+
+/* 
+.cards button{
+    margin: 0.5rem 5px;
+    grid-area: button;
+} */
+
+.portrait {
+    background-color: var(--back-color-color2); /* light gray background for subtlety */
+    color: var(--secondary-color1);              /* dark text for readability */
+    border: 1px solid var(--primary-color1);     /* sharp blue border */
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.portrait h2 {
+    color: var(--primary-color1); /* titles in dark blue */
+}
+
+.portrait p,
+.portrait address {
+    color: var(--secondary-color1); /* general text stays dark for clarity */
+}
+
+.portrait button {
+    background-color: var(--primary-color1); /* dark blue button */
+    color: white;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: fit-content;
+    transition: background-color 0.3s ease;
+}
+
+.portrait button:hover {
+    background-color: #24466b; /* darker shade of --primary-color1 for hover */
+}
+
+
+/* footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--primary-color1);
+    color:var(--back-color-color2);
+}
+footer a{
+    margin-right: 35px;
+    color: var(--back-color-color2);
+    text-decoration: none;
+}
+footer img{
+    height: 48px;
+    width: 48px;
+}
+footer p{
+    margin-top: 5px;
+} */
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--primary-color1);
+    color: var(--back-color-color2);
+    /* position:fixed;  */
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    min-height: 80px; /* Prevents height shift */
+}
+
+footer a {
+    margin-right: 35px;
+    color: var(--back-color-color2);
+    text-decoration: none;
+}
+
+footer img {
+    height: 48px;
+    width: 48px; /* Set fixed size to prevent shifting */
+}
+
+footer p {
+    margin-top: 5px;
+    font-size: 14px; /* Ensures consistency */
+}
+
+footer .space {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .hamburger {
+        display: block; 
+        font-size: 30px;
+        color: whitesmoke;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+   
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: var(--primary-color1);
+        width: 100%;
+        left: 0;
+    }
+
+    
+    .menu.open {
+        display: flex;
+    }
+
+    .menu a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+    }
+    .hamburger.open {
+        color: var(--primary-color2); 
+    }
+    footer{
+        display: block;
+        text-align: center;
+    }
+    .space{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    
+    .portrait{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "photo name"
+        "photo description"
+        "photo address"
+        "photo button"
+        ;
+    }
+
+}
+
+@media only screen and (min-width:1024px) {
+    .portrait-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "photo name photo name"
+        "photo description photo description"
+        "photo address photo address"
+        "photo button photo button"
+
+        ;
+    }   
+}
