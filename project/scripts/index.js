@@ -1,24 +1,13 @@
-// Get last modified date
-const lastmod = document.querySelector("#lastmodified");
-lastmod.textContent = `Last Modified: ${document.lastModified}`;
-
-
-async function fetchMembers() {
-    try{
-        const response = await fetch('data/cars.json');
-        if (!response.ok) throw new Error('Failed to fetch the cars.json');
-        return await response.json();
-    } catch (error) {
-        console.error('Error fetching cars:', error);
-        return[];
-    }
-    
-}
+import { setupHamburgerMenu } from "./ham.mjs";
+import { updateLastModified } from "./last-modified.mjs";
+import { fetchMembers } from "./cars-data.mjs";  
+updateLastModified();
+setupHamburgerMenu();
 
 function getSpotlights(cars){
     const eligiblePick = cars.filter(car => car.type === 'Suv'|| car.type === 'Truck'|| car.type === 'Sport' );
     eligiblePick.sort(() => Math.random() - 0.5);
-    return eligiblePick.slice(0,3);
+    return eligiblePick.slice(0,4);
 }
 
 function displaySpotlights(spotlights) {
@@ -44,15 +33,6 @@ async function init() {
     const cars = await fetchMembers();
     const spotlights = getSpotlights(cars)
     displaySpotlights(spotlights)
-    // await fetchfive
+    
 }
 init();
-
-document.getElementById('ham').addEventListener('click', function() {
-    const nav = document.querySelector('.nav');
-    nav.classList.toggle('active');
-    this.classList.toggle('close-btn');
-    
-    // Prevent the button from moving
-    this.style.transform = 'none';
-});
