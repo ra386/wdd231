@@ -20,9 +20,9 @@ function displaySpotlights(spotlights) {
         card.innerHTML=`
         <img src="images/${car.imagesrc}" alt="${car.description}" loading="lazy">
         <h2>${car.name}</h2>
-        <p>Type: ${car.type}</p>
-        <p>Year: ${car.year}</p>
-        <p>Brand: ${car.brand}</p>
+        <p id="brand">Brand: ${car.brand}</p>
+        <p id="car">Type: ${car.type} -- ${car.year}</p>
+        
         `;
 
         spotlightContainer.appendChild(card);

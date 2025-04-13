@@ -11,11 +11,43 @@ figure img{
 figure{
     text-align: center;
 }
-.intro{
-    display: flex;
-    justify-content: space-between;
-    justify-content: space-around;
-    gap: 2rem;
+/* .intro{
+    display: grid;
+    grid-template-areas:
+    "photo1"
+    "photo2"
+    "text" ;
+}
+.intro #photo1{
+    grid-area:photo1 ;
+}
+.intro #photo2{
+    grid-area: photo2;
+}
+.intro #text{
+    grid-area:text;
+} */
+
+
+.intro {
+    display: grid;
+    grid-template-areas:
+        "photo1"
+        "photo2"
+        "text";
+    gap: 10px; /* Add gap for all screen sizes */
+}
+
+.intro #photo1 {
+    grid-area: photo1;
+}
+
+.intro #photo2 {
+    grid-area: photo2;
+}
+.intro #text {
+    grid-area: text;
+    display: block;
 }
 .point{
     text-align: center;
@@ -89,6 +121,26 @@ figure{
 }
 
 
-@media (max-width: 768px) {
-    
+
+@media (man-width: 400px) {
+    .intro{
+        display: block;
+    }
+}
+
+
+@media (min-width: 600px) {
+    .intro {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "text photo1 photo2";
+    }
+}
+
+@media (min-width: 1024px) {
+    .intro {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "photo1 photo2 text";
+    }
 }

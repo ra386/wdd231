@@ -1,69 +1,169 @@
-
-.ace{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem; */
-    display: flex;
-    flex-flow: column;
-    gap: 10px;
-}
-
-/* figure img{
-    height: 250px;
-    width: 350px auto;
-} */
-figure{
-    text-align: center;
-}
-.glide{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-}
-form label{
-    /* display:block; */
-}
-form div{
-   margin-top: 10px;
-} 
-form input{
-    border-left: 4px solid black;
-    border-radius: 3px;
-    height: 30px;
-    width: 250px;
-    
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    
-}
-
-
-
-
+/* Base styles for all elements */
 .ace {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Always 3 equal columns */
-    gap: 1rem; /* Space between items */
-    width: 100%; /* Takes full width of its container */
+    grid-template-columns: 1fr; /* Single column by default (mobile-first) */
+    gap: 1rem;
+    width: 100%;
 }
 
 .ace figure {
-    margin: 0; /* Remove default figure margin */
-    width: 100%; /* Full width of grid cell */
-    overflow: hidden; /* Optional: if you want to hide any potential overflow */
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
 }
 
 .ace img {
-    width: 100%; /* Fill the container width */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove extra space below image */
-    object-fit: cover; /* Optional: ensures images cover the area nicely */
-    transition: transform 0.3s ease; /* Optional: for hover effects */
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-/* Optional: Add hover effect */
 .ace img:hover {
     transform: scale(1.02);
+}
+
+.glide {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+form label {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--primary-color1);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+form input {
+    border-left: 4px solid black;
+    border-radius: 3px;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+form input[type=text],
+form input[type=tel],
+form input[type=email],
+form select {
+    width: 100%;
+}
+
+form textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    min-height: 120px;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+    width: 100%;
+}
+
+form input[type=submit] {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: whitesmoke;
+    background-color: var(--primary-color1);
+    border: none;
+    border-radius: 6px;
+}
+
+form input[type=submit]:hover {
+    background-color: #517eae;
+}
+
+/* Responsive adjustments */
+
+/* 600px and up */
+@media (min-width: 600px) {
+    .ace {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .glide {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .glide > div {
+        flex: 1 1 45%;
+        min-width: 300px;
+    }
+    
+    iframe {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+/* 768px and up */
+@media (min-width: 768px) {
+    form {
+        padding: 2rem;
+    }
+}
+
+/* 1024px and up */
+@media (min-width: 1024px) {
+    .ace {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .glide {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    
+    .glide > div {
+        flex: none;
+    }
+    
+    iframe {
+        height: 500px;
+    }
+}
+
+/* Very small screens (below 480px) */
+@media (max-width: 480px) {
+    form {
+        padding: 1rem;
+    }
+    
+    form input,
+    form select,
+    form textarea {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+    
+    form label {
+        font-size: 1rem;
+    }
+    
+    form input[type=submit] {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
 }
