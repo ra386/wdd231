@@ -1,146 +1,153 @@
-
-
-h2,h3 {
-    text-align: center;
+:root
+{
+    --primary-color1: #2c3e50;
+    --primary-color2: #e74c3c;
+    --secondary-color1: #ffffff;
+    --secondary-color2:#d4af37;
+    --back-color-color2:#f5e6ca;
+}
+/* Shared Styles */
+h2, h3 {
+  text-align: center;
 }
 
-figure img{
-    height: 250px;
-    width: 350px;
+figure img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
 }
-figure{
-    text-align: center;
+
+figure {
+  text-align: center;
+  margin: 0;
 }
-/* .intro{
-    display: grid;
-    grid-template-areas:
+
+.intro, .outro {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+.intro #photo1,
+.intro #photo2,
+.intro #text,
+.outro section,
+.outro figure {
+  width: 100%;
+}
+
+/* Mobile Layout (default) */
+.intro {
+  grid-template-areas:
     "photo1"
     "photo2"
-    "text" ;
+    "text";
 }
-.intro #photo1{
-    grid-area:photo1 ;
-}
-.intro #photo2{
-    grid-area: photo2;
-}
-.intro #text{
-    grid-area:text;
-} */
 
+.intro #photo1 { grid-area: photo1; }
+.intro #photo2 { grid-area: photo2; }
+.intro #text { grid-area: text; }
 
-.intro {
-    display: grid;
+.outro {
+  grid-template-areas:
+    "section"
+    "figure1"
+    "figure2";
+}
+
+.outro section { grid-area: section; }
+.outro figure:nth-of-type(1) { grid-area: figure1; }
+.outro figure:nth-of-type(2) { grid-area: figure2; }
+
+/* Tablet Layout - min 600px */
+@media (min-width: 600px) {
+  .intro {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "text photo1 photo2";
+  }
+
+  .outro {
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        "photo1"
-        "photo2"
-        "text";
-    gap: 10px; /* Add gap for all screen sizes */
+      "section section"
+      "figure1 figure2";
+  }
 }
 
-.intro #photo1 {
-    grid-area: photo1;
-}
+/* Desktop Layout - min 1024px */
+@media (min-width: 1024px) {
+  .intro {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "photo1 photo2 text";
+  }
 
-.intro #photo2 {
-    grid-area: photo2;
+  .outro {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "section figure1 figure2";
+  }
 }
-.intro #text {
-    grid-area: text;
-    display: block;
-}
-.point{
-    text-align: center;
-}
-.point button{
-    padding: 10px;
-    width: 80px;
-    margin-right: 20px;
-    border-radius: 5px;
-}
-
 
 /* Cars Catalogue Styles */
 .cars {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
 .car-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    text-align: center;
-    transition: transform 0.3s ease;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .car-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .car-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .car-card h3 {
-    margin: 10px 0 5px;
-    font-size: 1.2rem;
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
 }
 
 .car-card p {
-    margin: 5px 0;
-    color: #555;
+  margin: 5px 0;
+  color: #555;
 }
 
 .point {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 20px 0;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
 }
 
 .point button {
-    padding: 8px 15px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 8px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .point button:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
 
 
-@media (man-width: 400px) {
-    .intro{
-        display: block;
-    }
-}
 
 
-@media (min-width: 600px) {
-    .intro {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-            "text photo1 photo2";
-    }
-}
-
-@media (min-width: 1024px) {
-    .intro {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-            "photo1 photo2 text";
-    }
-}
