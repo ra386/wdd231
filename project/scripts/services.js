@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 function displayCars(carsToDisplay) {
     const catalogueDiv = document.getElementById('Catalogue');
     
-    // Clear any existing content
+   
     catalogueDiv.innerHTML = '';
     
     carsToDisplay.forEach(car => {
-        // Skip if image source is empty
+        
         if (!car.imagesrc) return;
         
         const carCard = document.createElement('div');
@@ -46,6 +46,9 @@ function displayCars(carsToDisplay) {
         catalogueDiv.appendChild(carCard);
     });
 }
+
+
+
 
 function setupFilterButtons(allCars) {
     // Get all filter buttons
