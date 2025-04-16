@@ -12,7 +12,7 @@
     <!-- <meta property="og:image" content="https://github.com/ra386/wdd231/blob/main/chamber/images/douala.jpg"> -->
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="styles/index-large.css">
-    <!-- <link rel="stylesheet" href="styles/basic.css"> -->
+    <link rel="stylesheet" href="styles/basic.css">
     <script src="scripts/index.js" type="module" defer></script>
 
 
@@ -76,12 +76,25 @@
             <button>Innovative</button>
             <button>Affordable</button>
         </div>
-        <h2>Rides on Sale <span>10% off</span></h2>
+        <h2 id="mucho">Rides on Sale <span>10% off</span></h2>
         <div class="more">
            <div class="random" id="randomCards">
 
            </div>
-           <button>See More</button>
+           <div>
+            <button id="bronzeBtn">See More</button>
+               <div id="bronze-modal" class="modal">
+                <div class="modal-content">
+                    <span class="bronzeclose">&times;</span>
+                    <h3>Book for more info</h3>
+                    <ul>
+                        <li>A wide variety of cars, check on our catalogue</li>
+                        <li>Top notch Repair and Customisation jobs</li>
+                        <li>Don't miss-out on our limited and exclusive offers</li>
+                    </ul>
+                  </div>
+               </div>
+           </div>
         </div>
         <div class="click">
             <div>

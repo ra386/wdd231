@@ -12,11 +12,7 @@ setupHamburgerMenu();
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         const cars = await fetchMembers();
-        
-        // Display all cars initially
         displayCars(cars);
-        
-        // Set up filter buttons
         setupFilterButtons(cars);
     } catch (error) {
         console.error('Error loading cars:', error);
@@ -51,14 +47,14 @@ function displayCars(carsToDisplay) {
 
 
 function setupFilterButtons(allCars) {
-    // Get all filter buttons
+   
     const allBtn = document.getElementById('all');
     const sportBtn = document.getElementById('sport');
     const suvBtn = document.getElementById('suv');
     const trucksBtn = document.getElementById('Trucks');
     const sedanBtn = document.getElementById('sedan');
     
-    // Add event listeners to each button
+
     allBtn.addEventListener('click', () => displayCars(allCars));
     
     sportBtn.addEventListener('click', () => {

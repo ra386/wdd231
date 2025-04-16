@@ -1,31 +1,46 @@
-/* :root
-{
-    --primary-color1: #2c3e50;
-    --primary-color2: #e74c3c;
-    --secondary-color1: #ffffff;
-    --secondary-color2:#d4af37;
-    --back-color-color2:#f5e6ca;
-} */
+
+:root {
+  --primary: #2c3e50;       
+  --secondary: #e74c3c;      
+  --accent-gold: #d4af37;    
+  --accent-sand: #f5e6ca;    
+  --text-dark: #333;         
+  --text-light: white;       
+  --background: whitesmoke;  
+}
 
 h2, h3 {
   text-align: center;
+  color: var(--primary);
+}
+
+h2 span, h3 span {
+  color: var(--secondary);
 }
 
 figure img {
   height: 250px;
   width: 100%;
   object-fit: cover;
+  border: 2px solid var(--accent-gold);
+  border-radius: 4px;
 }
 
 figure {
   text-align: center;
   margin: 0;
 }
+#mano{
+  margin-top: 15px;
+}
 
 .intro, .outro {
   display: grid;
   gap: 20px;
   padding: 20px;
+  background-color: var(--accent-sand);
+  border-radius: 8px;
+  margin: 1rem 0;
 }
 
 .intro #photo1,
@@ -36,7 +51,6 @@ figure {
   width: 100%;
 }
 
-
 .intro {
   grid-template-areas:
     "photo1"
@@ -44,9 +58,31 @@ figure {
     "text";
 }
 
-.intro #photo1 { grid-area: photo1; }
-.intro #photo2 { grid-area: photo2; }
-.intro #text { grid-area: text; }
+
+.intro #photo1 {
+  grid-area: photo1;
+}
+
+.intro #photo2 {
+  grid-area: photo2;
+}
+
+.intro #text {
+  grid-area: text;
+}
+
+.intro #text {
+  background-color: white;
+}
+
+.intro #text {
+  padding: 1rem;
+}
+
+.intro #text {
+  border-radius: 8px;
+}
+
 
 .outro {
   grid-template-areas:
@@ -55,10 +91,86 @@ figure {
     "figure2";
 }
 
-.outro section { grid-area: section; }
-.outro figure:nth-of-type(1) { grid-area: figure1; }
-.outro figure:nth-of-type(2) { grid-area: figure2; }
+.outro section { 
+  grid-area: section; 
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
 
+.outro figure:nth-of-type(1) {
+  grid-area: figure1;
+}
+
+.outro figure:nth-of-type(2) {
+  grid-area: figure2;
+}
+
+.cars {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--accent-sand);
+  border-radius: 8px;
+}
+
+.car-card {
+  border: 1px solid var(--accent-gold);
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.2);
+  border-color: var(--secondary);
+}
+
+.car-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid var(--accent-gold);
+}
+
+.car-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.car-card p {
+  margin: 5px 0;
+  color: var(--text-dark);
+}
+
+.point {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.point button {
+  padding: 8px 15px;
+  background-color: var(--primary);
+  color: var(--text-light);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.point button:hover {
+  background-color: var(--secondary);
+  transform: translateY(-2px);
+}
 
 @media (min-width: 600px) {
   .intro {
@@ -84,189 +196,4 @@ figure {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "section figure1 figure2";
   }
-}
-
-
-.cars {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.car-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.car-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.car-card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.car-card h3 {
-  margin: 10px 0 5px;
-  font-size: 1.2rem;
-}
-
-.car-card p {
-  margin: 5px 0;
-  color: #555;
-}
-
-.point {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 20px 0;
-  flex-wrap: wrap;
-}
-
-.point button {
-  padding: 8px 15px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.point button:hover {
-  background-color: #555;
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body {
-  background-color: var(--background-color);
-  color: var(--text-dark);
-  font-family: 'Arial', sans-serif;
-}
-
-/* Header */
-header {
-  background-color: var(--primary-color);
-  color: var(--text-light);
-}
-
-nav a {
-  color: var(--text-light);
-}
-
-nav a:hover {
-  background-color: var(--accent-color);
-  color: var(--text-light);
-}
-
-/* Buttons */
-button {
-  background-color: var(--primary-color);
-  color: var(--text-light);
-  border: none;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: var(--accent-color);
-}
-
-/* Hero */
-.hero img {
-  border-bottom: 4px solid var(--highlight-color);
-}
-
-/* Car Cards */
-.car-card {
-  background-color: var(--text-light);
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
-  border-radius: 8px;
-  transition: 0.3s ease;
-}
-
-.car-card:hover {
-  box-shadow: 0 4px 10px rgba(30, 42, 56, 0.3);
-  transform: translateY(-5px);
-}
-
-/* Footer */
-footer {
-  background-color: var(--primary-color);
-  color: var(--text-light);
-}
-
-footer a {
-  color: var(--highlight-color);
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: var(--text-light);
-}
-
-
-
-h2, h3 {
-  color: var(--primary-color);
-}
-
-
-
-:root {
-  --primary-color: #1e2a38;      /* Midnight Blue */
-  --accent-color: #d62828;       /* Crimson Red */
-  --background-color: #f5f5f5;   /* Smoke White */
-  --highlight-color: #c9a227;    /* Steel Gold */
-  --text-light: #ffffff;
-  --text-dark: #1e2a38;
-}
-.cta {
-  color: var(--accent-color);
-  background-color: var(--highlight-color);
-  padding: 0.2em 0.4em;
-  border-radius: 4px;
-  font-weight: 700;
-}
-
-
-span {
-  color: var(--highlight-color);
-  font-weight: bold;
 }

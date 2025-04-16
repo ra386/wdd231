@@ -5,7 +5,7 @@ export function setupHamburgerMenu() {
         nav.classList.toggle('active');
         this.classList.toggle('close-btn');
         
-        // Prevent the button from moving
+       
         this.style.transform = 'none';
     });
 }

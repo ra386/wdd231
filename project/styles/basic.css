@@ -11,7 +11,6 @@ header {
     color: white;
     padding: 0.5rem 2rem;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    /* position: sticky; */
     top: 0;
     z-index: 1000;
     font-family: 'Arial', sans-serif;
@@ -24,12 +23,12 @@ header {
     display: flex;
     align-items: center;
     gap: 15px;
-    position: relative; /* Added for positioning context */
-    width: 100%; /* Ensure full width for proper spacing */
+    position: relative; 
+    width: 100%; 
 }
 
 .header1 h1 {
-    /* margin: 0; */
+    
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -71,7 +70,7 @@ nav a:hover {
     font-size: 1.8rem;
     cursor: pointer;
     padding: 0.3rem;
-    transition: transform 0.2s ease; /* Smooth transition for any potential animation */
+    transition: transform 0.2s ease; 
 }
 .hero img {
     object-fit: cover;
@@ -102,7 +101,7 @@ nav a:hover {
 .copy{
     display: flex;
     justify-content: space-around;
-    /* justify-content: space-between; */
+    
 }
 
 footer{
@@ -111,7 +110,7 @@ footer{
     color: white;
 }
 
-/* Responsive Design */
+
 @media (max-width: 600px) {
     header {
         padding: 0.5rem 1rem;
@@ -136,12 +135,28 @@ footer{
     
     #ham {
         display: block;
-        position: static; /* Changed from absolute to static */
-        margin-left: auto; /* Pushes hamburger to the far right */
-        transform: none !important; /* Prevents any transform animations */
+        position: static; 
+        margin-left: auto; 
+        transform: none !important;
     }
     
     .header1 {
-        justify-content: space-between; /* Ensures logo and hamburger stay at opposite ends */
+        justify-content: space-between;
+    }
+    footer{
+        padding: 30px;
+    }
+    .zra{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .copy{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
     }
 }

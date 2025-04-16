@@ -36,3 +36,20 @@ async function init() {
     
 }
 init();
+
+
+let bronze = document.getElementById("bronze-modal");
+let bronzebtn = document.getElementById("bronzeBtn");
+let bronzespan = document.getElementsByClassName("bronzeclose")[0];
+
+bronzebtn.onclick = function() {
+    bronze.style.display = "block";
+}
+bronzespan.onclick = function() {
+    bronze.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == bronze) {
+        bronze.style.display = "none";
+    }
+}
