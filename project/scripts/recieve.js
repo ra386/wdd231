@@ -44,7 +44,7 @@ console.log(myinfo);
 document.querySelector('#results').innerHTML =`
 <h2>Application Details</h2>
 <p>Booking for ${myinfo.get('firstName')} ${myinfo.get('lastName')}</p>
-<p>For the date of: ${myinfo.get('Apointment')}</p>
+<p>For the date of: ${myinfo.get('Appointment')}</p>
 <p>Car type: ${myinfo.get('cars')}</p>
 <p>Car trouble description: ${myinfo.get('review')}</p>
 <p>Contact Info: Phone--${myinfo.get('phone')} || Email-- ${myinfo.get('email')}</p>
